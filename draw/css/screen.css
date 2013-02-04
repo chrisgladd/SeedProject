@@ -1,0 +1,680 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* _base.scss
+ * This is the base stylesheet with common variables,
+ * framework utitlities, and custom mixins.
+ * It does not compile to .css
+ */
+/* line 17, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/*  etc.  */
+/** 
+ * Yellow-Orange Theme 
+ * $base-light : #fff95e;
+ * $base-dark : #febf04;
+ */
+/* line 9, ../scss/screen.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 13, ../scss/screen.scss */
+body {
+  background-color: #112f11;
+  background-image: -webkit-gradient(radial, 50%, 0, 50%, 100, color-stop(0%, #47c947), color-stop(100%, #112f11));
+  background-image: -webkit-radial-gradient(center, ellipse cover, #47c947 0%, #112f11 100%);
+  background-image: -moz-radial-gradient(center, ellipse cover, #47c947 0%, #112f11 100%);
+  background-image: -o-radial-gradient(center, ellipse cover, #47c947 0%, #112f11 100%);
+  background-image: radial-gradient(center, ellipse cover, #47c947 0%, #112f11 100%);
+}
+
+/**
+* Buttons
+*/
+/* line 22, ../scss/screen.scss */
+.GreenBtn {
+  background-color: black;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #68be32), color-stop(50%, #3e9822), color-stop(51%, #1f8f0c), color-stop(100%, #45a525));
+  background-image: -webkit-linear-gradient(top, #68be32 0%, #3e9822 50%, #1f8f0c 51%, #45a525 100%);
+  background-image: -moz-linear-gradient(top, #68be32 0%, #3e9822 50%, #1f8f0c 51%, #45a525 100%);
+  background-image: -o-linear-gradient(top, #68be32 0%, #3e9822 50%, #1f8f0c 51%, #45a525 100%);
+  background-image: linear-gradient(top, #68be32 0%, #3e9822 50%, #1f8f0c 51%, #45a525 100%);
+  border: #aaaaaa 1px solid;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+
+/**
+* Top View
+*/
+/* line 38, ../scss/screen.scss */
+.TopView, .Panel {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/**
+* Splash Panel
+*/
+/* line 47, ../scss/screen.scss */
+.SplashImg {
+  position: absolute;
+  width: 60%;
+  height: 40%;
+  top: 30%;
+  left: 20%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background: transparent url("../img/SmallLogo.png") no-repeat center center;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  background-color: #ffecc8;
+  border: 9px #291b00 solid;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
+  -webkit-box-shadow: 2px 2px 3px #666666;
+  -moz-box-shadow: 2px 2px 3px #666666;
+  box-shadow: 2px 2px 3px #666666;
+}
+@media screen and (orientation: landscape) {
+  /* line 47, ../scss/screen.scss */
+  .SplashImg {
+    width: 40%;
+    height: 60%;
+    top: 20%;
+    left: 30%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+
+/**
+* Login Panel
+*/
+/* line 68, ../scss/screen.scss */
+#LoginForm {
+  position: absolute;
+  width: 40%;
+  height: 90%;
+  top: 5%;
+  left: 30%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /*@include ColorBox;*/
+  background-color: #ffecc8;
+  border: 2px #291b00 solid;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  -webkit-box-shadow: 2px 2px 3px #666666;
+  -moz-box-shadow: 2px 2px 3px #666666;
+  box-shadow: 2px 2px 3px #666666;
+}
+@media screen and (orientation: landscape) {
+  /* line 68, ../scss/screen.scss */
+  #LoginForm {
+    width: 50%;
+    height: 70%;
+    top: 15%;
+    left: 25%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+}
+/* line 76, ../scss/screen.scss */
+#LoginForm input {
+  color: #222;
+  font-size: 1.3em;
+  font-weight: 900;
+  font-family: 'Helvetica';
+}
+
+/* line 87, ../scss/screen.scss */
+.LoginText {
+  width: 90%;
+  height: 2em;
+  margin: 5%;
+}
+
+/* line 94, ../scss/screen.scss */
+.LoginBtn {
+  width: 50%;
+  height: 20%;
+  position: absolute;
+  left: auto;
+  right: 5%;
+  top: auto;
+  bottom: 5%;
+}
+
+/**
+* Menu Panel
+*/
+/* line 102, ../scss/screen.scss */
+.MenuDiv {
+  position: relative;
+}
+
+/* line 106, ../scss/screen.scss */
+.MenuButton {
+  width: 40%;
+  height: 30%;
+  position: relative;
+  left: 4%;
+  right: auto;
+  top: 15%;
+  bottom: auto;
+  margin: 2%;
+  float: left;
+  /*@include ColorBox;*/
+  background-color: #ffecc8;
+  border: 3px #291b00 solid;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 3px #666666;
+  -moz-box-shadow: 2px 2px 3px #666666;
+  box-shadow: 2px 2px 3px #666666;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center;
+}
+@media screen and (orientation: landscape) {
+  /* line 106, ../scss/screen.scss */
+  .MenuButton {
+    width: 30%;
+    height: 40%;
+    position: relative;
+    left: 15%;
+    right: auto;
+    top: 4%;
+    bottom: auto;
+  }
+}
+/* line 122, ../scss/screen.scss */
+.MenuButton span {
+  font-size: 2em;
+  font-weight: 900;
+  color: #333;
+  position: relative;
+  top: 35%;
+}
+/* line 130, ../scss/screen.scss */
+.MenuButton .MenuImage {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /*@include Icon(2px, 10px);*/
+  width: 65%;
+  height: 65%;
+  position: relative;
+  left: 16.5%;
+  right: auto;
+  top: 5%;
+  bottom: auto;
+  margin-bottom: 5%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* line 141, ../scss/screen.scss */
+#MenuDraw .MenuImage {
+  background-image: url("../img/PencilIcon.png");
+  -webkit-background-size: 80%;
+  -moz-background-size: 80%;
+  -o-background-size: 80%;
+  background-size: 80%;
+}
+
+/* line 147, ../scss/screen.scss */
+#MenuBranch .MenuImage {
+  background-image: url("../img/BranchIcon.png");
+  -webkit-background-size: 80%;
+  -moz-background-size: 80%;
+  -o-background-size: 80%;
+  background-size: 80%;
+}
+
+/* line 153, ../scss/screen.scss */
+#MenuReplay .MenuImage {
+  background-image: url("../img/PlayIcon.png");
+  -webkit-background-size: 80%;
+  -moz-background-size: 80%;
+  -o-background-size: 80%;
+  background-size: 80%;
+}
+
+/* line 159, ../scss/screen.scss */
+#MenuHistory .MenuImage {
+  background-image: url("../img/SaveIcon.png");
+  -webkit-background-size: 80%;
+  -moz-background-size: 80%;
+  -o-background-size: 80%;
+  background-size: 80%;
+}
+
+/* line 165, ../scss/screen.scss */
+.SettingsButton {
+  width: 10%;
+  height: 15%;
+  position: absolute;
+  left: auto;
+  right: 0%;
+  top: auto;
+  bottom: 0%;
+  margin: 1%;
+}
+/* line 169, ../scss/screen.scss */
+.SettingsButton .MenuImage {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  left: 0%;
+  right: auto;
+  top: 0%;
+  bottom: auto;
+  background-image: url("../img/GearIcon.png");
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+}
+
+/**
+* Draw Panel
+*/
+/* line 179, ../scss/screen.scss */
+.DrawDiv {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 184, ../scss/screen.scss */
+.DrawContainer {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 188, ../scss/screen.scss */
+.DrawCanvas {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0%;
+  right: auto;
+  top: 0%;
+  bottom: auto;
+  background-color: white;
+}
+
+/* line 194, ../scss/screen.scss */
+.DrawMenu {
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  left: -11%;
+  right: auto;
+  top: auto;
+  bottom: 0%;
+  min-height: 50px;
+  min-width: auto;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-color: #073907;
+  border-left: 1px solid #777777;
+  z-index: 1;
+}
+@media screen and (orientation: landscape) {
+  /* line 194, ../scss/screen.scss */
+  .DrawMenu {
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    left: auto;
+    right: -11%;
+    top: auto;
+    bottom: 0%;
+    min-width: 50px;
+    min-height: auto;
+  }
+}
+
+/* line 212, ../scss/screen.scss */
+.DrawMenuOpen {
+  width: 100%;
+  height: 10%;
+  position: absolute;
+  left: 0%;
+  right: auto;
+  top: auto;
+  bottom: 0%;
+}
+@media screen and (orientation: landscape) {
+  /* line 212, ../scss/screen.scss */
+  .DrawMenuOpen {
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    left: auto;
+    right: 0%;
+    top: auto;
+    bottom: 0%;
+  }
+}
+
+/* line 220, ../scss/screen.scss */
+.DrawBtn {
+  float: left;
+  width: 12.1%;
+  height: 80%;
+  position: relative;
+  left: 0%;
+  right: auto;
+  top: 0%;
+  bottom: auto;
+  margin: 1%;
+  background-color: #ffecc8;
+  border: 1px #291b00 solid;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 2px 2px 3px #666666;
+  -moz-box-shadow: 2px 2px 3px #666666;
+  box-shadow: 2px 2px 3px #666666;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+@media screen and (orientation: landscape) {
+  /* line 220, ../scss/screen.scss */
+  .DrawBtn {
+    width: 80%;
+    height: 12.1%;
+    position: relative;
+    left: 0%;
+    right: auto;
+    top: 0%;
+    bottom: auto;
+    margin: 5% 7%;
+  }
+}
+/* line 230, ../scss/screen.scss */
+.DrawBtn span {
+  display: none;
+}
+
+/* line 239, ../scss/screen.scss */
+#PencilBtn {
+  background-image: url("../img/PencilIcon.png");
+  -webkit-background-size: 80%;
+  -moz-background-size: 80%;
+  -o-background-size: 80%;
+  background-size: 80%;
+}
+
+/* line 243, ../scss/screen.scss */
+#EraseBtn {
+  background-image: url("../img/EraseIcon.png");
+  -webkit-background-size: 80%;
+  -moz-background-size: 80%;
+  -o-background-size: 80%;
+  background-size: 80%;
+}
+
+/* line 247, ../scss/screen.scss */
+#UndoBtn {
+  background-image: url("../img/UndoIcon.png");
+  -webkit-background-size: 80%;
+  -moz-background-size: 80%;
+  -o-background-size: 80%;
+  background-size: 80%;
+}
+
+/* line 251, ../scss/screen.scss */
+#LayerBtn {
+  background-image: url("../img/LayerIcon.png");
+  -webkit-background-size: 80%;
+  -moz-background-size: 80%;
+  -o-background-size: 80%;
+  background-size: 80%;
+}
+
+/* line 255, ../scss/screen.scss */
+#PaletteBtn {
+  background-image: url("../img/PaletteIcon.png");
+  -webkit-background-size: 80%;
+  -moz-background-size: 80%;
+  -o-background-size: 80%;
+  background-size: 80%;
+}
+
+/* line 259, ../scss/screen.scss */
+#SaveBtn {
+  background-image: url("../img/SaveIcon.png");
+  -webkit-background-size: 80%;
+  -moz-background-size: 80%;
+  -o-background-size: 80%;
+  background-size: 80%;
+}
+
+/* line 263, ../scss/screen.scss */
+#BackBtn {
+  background-image: url("../img/BackIcon.png");
+  -webkit-background-size: 80%;
+  -moz-background-size: 80%;
+  -o-background-size: 80%;
+  background-size: 80%;
+}
+
+/* line 268, ../scss/screen.scss */
+.DrawMenuSlider {
+  width: 10%;
+  height: 7%;
+  position: absolute;
+  left: auto;
+  right: 0%;
+  top: auto;
+  bottom: 0%;
+  background: #333;
+  opacity: .4;
+  -moz-border-radius-topleft: 7px;
+  -webkit-border-top-left-radius: 7px;
+  border-top-left-radius: 7px;
+  text-align: center;
+}
+@media screen and (orientation: landscape) {
+  /* line 268, ../scss/screen.scss */
+  .DrawMenuSlider {
+    width: 7%;
+    height: 10%;
+    position: absolute;
+    left: auto;
+    right: 0%;
+    top: auto;
+    bottom: 0%;
+  }
+}
+/* line 279, ../scss/screen.scss */
+.DrawMenuSlider span {
+  opacity: 1;
+  color: #FFF;
+  font-weight: 900;
+  font-size: 1.8em;
+  position: relative;
+  top: 5%;
+}
+
+/* line 290, ../scss/screen.scss */
+.DrawMenuSliderOpen {
+  width: 10%;
+  height: 7%;
+  position: absolute;
+  left: auto;
+  right: 10%;
+  top: auto;
+  bottom: 0%;
+}
+@media screen and (orientation: landscape) {
+  /* line 290, ../scss/screen.scss */
+  .DrawMenuSliderOpen {
+    width: 7%;
+    height: 10%;
+    position: absolute;
+    left: auto;
+    right: 10%;
+    top: auto;
+    bottom: 0%;
+  }
+}

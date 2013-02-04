@@ -1,16 +1,26 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<title>Draw</title>
-		<link rel="stylesheet" href="css/gladd.css">
-		<script src="lib/jquery-1.7.2.js"></script>
-		<script src="gladd.js"></script>
-	</head>
-	<body onload="">
-		<!-- Splash Page to show to the user on load -->
-		<div class="SplashDiv">
-			<img class="Main"></img>
-		</div>
-	</body>
+<html lang="en" ng-app="SeedDraw">
+<head>
+	<meta charset="utf-8" />
+	<title>Draw</title>
+	<link href="css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<link href="css/print.css" media="print" rel="stylesheet" type="text/css" />
+	<!--[if IE]>
+		<link href="css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+	<![endif]-->
+	<link rel="stylesheet" href="css/app.css">
+</head>
+<body onload="">
+	<div class="TopView" ng-view></div>
+	
+	<!-- In production use:
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.2/angular.min.js"></script>
+	-->
+	<script src="lib/angular/angular.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/services.js"></script>
+	<script src="js/controllers.js"></script>
+	<script src="js/filters.js"></script>
+	<script src="js/directives.js"></script>
+</body>
 </html>

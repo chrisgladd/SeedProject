@@ -1,0 +1,35 @@
+[PHASE 1 - Front-end]
+1. Simple Drawing Application Up and Running
+	- Drawing Object
+	- Create
+	- Draw
+		- Change tip type (Marker, radial gradient, brush [random pixel definitions for color range?])
+		- Change color
+		- Change opacity
+		- Slow Draw = direct mapping
+		- Fast Draw = fill gaps automagically
+		- Erase
+		- Undo
+
+2. Add Gallery/History
+	- Local Save (No push or replication)
+	- Edit ability
+	- Delete
+	- Multiple Views - List (Name), Large [Image,replay,btns]
+	
+3. Replay 
+	- Built into Drawing Object
+	- Accessible from Gallery/History
+	- Watch the drawing take place again
+	- Use canvas and an animation timer
+	- Canvas play arrow similar to iOS overlay
+
+[PHASE 2 - Comms and Backend]
+
+4. Multiple Person Drawing
+	- Web worker pub/sub updates
+	- Random dot initialization
+	- Split screen Drawing live updates
+	- Steal a person's branch and build on it
+	- Attribution by percentage of work
+	- 

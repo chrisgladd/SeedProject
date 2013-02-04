@@ -1,0 +1,31 @@
+<div class="DrawDiv Panel">
+	<drawing id="CurrentDrawing" class="DrawContainer">
+	</drawing>
+	<brush id="Brush" class="DrawBrush"></brush>
+	<div ng-class="{DrawMenuOpen:menuOpen}" class="DrawMenu">
+		<div ng-click="pencil()" id="PencilBtn" class="DrawBtn">
+			<span>Pencil</span>
+		</div>
+		<div ng-click="erase()" id="EraseBtn" class="DrawBtn">
+			<span>Erase</span>
+		</div>
+		<div ng-click="undo()" id="UndoBtn" class="DrawBtn">
+			<span>Undo</span>
+		</div>
+		<div ng-click="layer()" id="LayerBtn" class="DrawBtn">
+			<span>Layers</span>
+		</div>
+		<div ng-click="palette()" id="PaletteBtn" class="DrawBtn">
+			<span>Palette</span>
+		</div>
+		<div ng-click="save()" id="SaveBtn" class="DrawBtn">
+			<span>Save</span>
+		</div>
+		<div ng-click="back()" id="BackBtn" class="DrawBtn">
+			<span>Back</span>
+		</div>
+	</div>
+	<div ng-class="{DrawMenuSliderOpen:menuOpen}" class="DrawMenuSlider" ng-click="menu()">
+		<span>{{sliderText}}</span>
+	</div>
+</div>
