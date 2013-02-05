@@ -275,6 +275,7 @@ body {
 	opacity: .4;
 	@include border-top-left-radius(7px);
 	text-align: center;
+	cursor: pointer;
 	
 	span {
 		opacity: 1;
