@@ -178,6 +178,8 @@ body {
 */
 .DrawDiv{
 	@include full;
+	background-color: white;
+
 	overflow: hidden;
 }
 
@@ -186,15 +188,25 @@ body {
 }
 
 .DrawCanvas {
-	@include sizePos(100%, 100%, absolute, 0%, 0%);
-	
-	background-color: white;
+	@include sizePos(auto, auto, absolute, 0%, 0%);
 }
 
+.DrawMouseDiv {
+	@include sizePos(auto, auto, absolute, 0%, 0%);
+}
+
+.DrawBrush {
+    display: none;
+}
+
+/**
+* Drawing Menu
+*/
 .DrawMenu {
 	@include sizePos(100%, 10%, absolute, -11%, auto, auto, 0%);
 	min-height: 50px;
 	min-width: auto;
+	display: none;
 	
 	@media screen and (orientation: landscape) {
 		@include sizePos(10%, 100%, absolute, auto, auto, -11%, 0%);
@@ -211,6 +223,7 @@ body {
 
 .DrawMenuOpen{
 	@include sizePos(100%, 10%, absolute, 0%, auto, auto, 0%);
+	display: block;
 	
 	@media screen and (orientation: landscape) {
 		@include sizePos(10%, 100%, absolute, auto, auto, 0%, 0%);

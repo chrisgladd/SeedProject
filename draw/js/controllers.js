@@ -28,10 +28,54 @@ function MenuCtrl($scope, $location) {
     };
 }
 
-
-function DrawCtrl($scope, $location) {
+function DrawCtrl($scope, $location, animate) {
     $scope.menuOpen = false;
     $scope.sliderText = "<";
+
+    $scope.ctrlDrawing = {
+        id : 0,
+        name : "TestDrawing",
+        brush : {
+            id: 0,
+            context: null,
+            type: Brush.Marker,
+            color: '000',
+            size: 10,
+            opacity: 1
+        },
+        layerIdx : 0,
+        layers : [
+            { 
+                index : 0,
+                context: null,
+                lines : [
+                    {
+                        x: [1,1,2,2,3,3,4,4,5,5],
+                        y: [1,1,2,2,3,3,4,4,5,5],
+                        brush: [0, 0, 10, 1]
+                    }
+                ]
+            },
+            { 
+                index : 1,
+                context: null,
+                lines : [
+                    {
+                        x: [1,1,2,2,3,3,4,4,5,5],
+                        y: [1,1,2,2,3,3,4,4,5,5],
+                        brush: [0, 0, 10, 1]
+                    }
+                ]
+            }
+        ],
+        buffer : {
+            context: null,
+            x: [1,1,2,2,3,3,4,4,5,5],
+            y: [1,1,2,2,3,3,4,4,5,5],
+        }
+    };
+
+    animator($scope.ctrlDrawing, animate);
 
     $scope.menu = function() {
         $scope.menuOpen = !$scope.menuOpen;
@@ -67,35 +111,6 @@ function DrawCtrl($scope, $location) {
     };
 }
 
-function DrawingCtrl($scope, $element) {
-    var layers = $scope.layers = [
-    { id : "Canvas0" },
-    { id : "Canvas1" },
-    { id : "Canvas2" },
-    { id : "Canvas3" }
-    ];
-
-    var brush = $scope.brush = {
-        type: Brush.Marker,
-        color: '000',
-        size: 10,
-        opacity: 1
-    };
-
-    $scope.select = function(layer) {
-        angular.forEach(layers, function(layer) {
-            layer.selected = false;
-        });
-        layer.selected = true;
-    }
-
-    this.addLayer = function(layer) {
-        if (layers.length == 0) $scope.select(layer);
-        layers.push(layer);
-    }
-}
-
-
 function BranchCtrl() {
 }
 
@@ -111,3 +126,4 @@ function HistCtrl() {
 function SetCtrl() {
 }
 //SetCtrl.$inject = [];
+

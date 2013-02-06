@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -72,7 +72,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  * framework utitlities, and custom mixins.
  * It does not compile to .css
  */
-/* line 17, ../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -94,45 +94,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -436,28 +436,47 @@ body {
 .DrawDiv {
   width: 100%;
   height: 100%;
+  background-color: white;
   overflow: hidden;
 }
 
-/* line 184, ../scss/screen.scss */
+/* line 186, ../scss/screen.scss */
 .DrawContainer {
   width: 100%;
   height: 100%;
 }
 
-/* line 188, ../scss/screen.scss */
+/* line 190, ../scss/screen.scss */
 .DrawCanvas {
-  width: 100%;
-  height: 100%;
+  width: auto;
+  height: auto;
   position: absolute;
   left: 0%;
   right: auto;
   top: 0%;
   bottom: auto;
-  background-color: white;
 }
 
 /* line 194, ../scss/screen.scss */
+.DrawMouseDiv {
+  width: auto;
+  height: auto;
+  position: absolute;
+  left: 0%;
+  right: auto;
+  top: 0%;
+  bottom: auto;
+}
+
+/* line 198, ../scss/screen.scss */
+.DrawBrush {
+  display: none;
+}
+
+/**
+* Drawing Menu
+*/
+/* line 205, ../scss/screen.scss */
 .DrawMenu {
   width: 100%;
   height: 10%;
@@ -468,6 +487,7 @@ body {
   bottom: 0%;
   min-height: 50px;
   min-width: auto;
+  display: none;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -476,7 +496,7 @@ body {
   z-index: 1;
 }
 @media screen and (orientation: landscape) {
-  /* line 194, ../scss/screen.scss */
+  /* line 205, ../scss/screen.scss */
   .DrawMenu {
     width: 10%;
     height: 100%;
@@ -490,7 +510,7 @@ body {
   }
 }
 
-/* line 212, ../scss/screen.scss */
+/* line 224, ../scss/screen.scss */
 .DrawMenuOpen {
   width: 100%;
   height: 10%;
@@ -499,9 +519,10 @@ body {
   right: auto;
   top: auto;
   bottom: 0%;
+  display: block;
 }
 @media screen and (orientation: landscape) {
-  /* line 212, ../scss/screen.scss */
+  /* line 224, ../scss/screen.scss */
   .DrawMenuOpen {
     width: 10%;
     height: 100%;
@@ -513,7 +534,7 @@ body {
   }
 }
 
-/* line 220, ../scss/screen.scss */
+/* line 233, ../scss/screen.scss */
 .DrawBtn {
   float: left;
   width: 12.1%;
@@ -538,7 +559,7 @@ body {
   background-position: center center;
 }
 @media screen and (orientation: landscape) {
-  /* line 220, ../scss/screen.scss */
+  /* line 233, ../scss/screen.scss */
   .DrawBtn {
     width: 80%;
     height: 12.1%;
@@ -550,12 +571,12 @@ body {
     margin: 5% 7%;
   }
 }
-/* line 230, ../scss/screen.scss */
+/* line 243, ../scss/screen.scss */
 .DrawBtn span {
   display: none;
 }
 
-/* line 239, ../scss/screen.scss */
+/* line 252, ../scss/screen.scss */
 #PencilBtn {
   background-image: url("../img/PencilIcon.png");
   -webkit-background-size: 80%;
@@ -564,7 +585,7 @@ body {
   background-size: 80%;
 }
 
-/* line 243, ../scss/screen.scss */
+/* line 256, ../scss/screen.scss */
 #EraseBtn {
   background-image: url("../img/EraseIcon.png");
   -webkit-background-size: 80%;
@@ -573,7 +594,7 @@ body {
   background-size: 80%;
 }
 
-/* line 247, ../scss/screen.scss */
+/* line 260, ../scss/screen.scss */
 #UndoBtn {
   background-image: url("../img/UndoIcon.png");
   -webkit-background-size: 80%;
@@ -582,7 +603,7 @@ body {
   background-size: 80%;
 }
 
-/* line 251, ../scss/screen.scss */
+/* line 264, ../scss/screen.scss */
 #LayerBtn {
   background-image: url("../img/LayerIcon.png");
   -webkit-background-size: 80%;
@@ -591,7 +612,7 @@ body {
   background-size: 80%;
 }
 
-/* line 255, ../scss/screen.scss */
+/* line 268, ../scss/screen.scss */
 #PaletteBtn {
   background-image: url("../img/PaletteIcon.png");
   -webkit-background-size: 80%;
@@ -600,7 +621,7 @@ body {
   background-size: 80%;
 }
 
-/* line 259, ../scss/screen.scss */
+/* line 272, ../scss/screen.scss */
 #SaveBtn {
   background-image: url("../img/SaveIcon.png");
   -webkit-background-size: 80%;
@@ -609,7 +630,7 @@ body {
   background-size: 80%;
 }
 
-/* line 263, ../scss/screen.scss */
+/* line 276, ../scss/screen.scss */
 #BackBtn {
   background-image: url("../img/BackIcon.png");
   -webkit-background-size: 80%;
@@ -618,7 +639,7 @@ body {
   background-size: 80%;
 }
 
-/* line 268, ../scss/screen.scss */
+/* line 281, ../scss/screen.scss */
 .DrawMenuSlider {
   width: 10%;
   height: 7%;
@@ -636,7 +657,7 @@ body {
   cursor: pointer;
 }
 @media screen and (orientation: landscape) {
-  /* line 268, ../scss/screen.scss */
+  /* line 281, ../scss/screen.scss */
   .DrawMenuSlider {
     width: 7%;
     height: 10%;
@@ -647,7 +668,7 @@ body {
     bottom: 0%;
   }
 }
-/* line 280, ../scss/screen.scss */
+/* line 293, ../scss/screen.scss */
 .DrawMenuSlider span {
   opacity: 1;
   color: #FFF;
@@ -657,7 +678,7 @@ body {
   top: 5%;
 }
 
-/* line 291, ../scss/screen.scss */
+/* line 304, ../scss/screen.scss */
 .DrawMenuSliderOpen {
   width: 10%;
   height: 7%;
@@ -668,7 +689,7 @@ body {
   bottom: 0%;
 }
 @media screen and (orientation: landscape) {
-  /* line 291, ../scss/screen.scss */
+  /* line 304, ../scss/screen.scss */
   .DrawMenuSliderOpen {
     width: 7%;
     height: 10%;
