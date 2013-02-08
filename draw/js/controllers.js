@@ -30,7 +30,7 @@ function MenuCtrl($scope, $location) {
 
 function DrawCtrl($scope, $location, animate) {
     $scope.menuOpen = false;
-    $scope.sliderText = "<";
+    $scope.sliderText = "+";
 
     $scope.ctrlDrawing = {
         id : 0,
@@ -38,7 +38,7 @@ function DrawCtrl($scope, $location, animate) {
         brush : {
             id: 0,
             context: null,
-            type: Brush.Marker,
+            type: Brush.Radial,
             color: '000',
             size: 10,
             opacity: 1
@@ -70,8 +70,12 @@ function DrawCtrl($scope, $location, animate) {
         ],
         buffer : {
             context: null,
-            x: [1,1,2,2,3,3,4,4,5,5],
-            y: [1,1,2,2,3,3,4,4,5,5],
+            prev: {
+                x:0,
+                y:0
+            },
+            x: [],
+            y: [],
         }
     };
 
@@ -79,7 +83,7 @@ function DrawCtrl($scope, $location, animate) {
 
     $scope.menu = function() {
         $scope.menuOpen = !$scope.menuOpen;
-        $scope.sliderText = $scope.menuOpen ? ">" : "<";
+        $scope.sliderText = $scope.menuOpen ? "-" : "+";
     };
 
     $scope.pencil = function() {
