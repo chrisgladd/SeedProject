@@ -28,58 +28,11 @@ function MenuCtrl($scope, $location) {
     };
 }
 
-function DrawCtrl($scope, $location, animate) {
+function DrawCtrl($scope, $location, DrawingService, animate) {
     $scope.menuOpen = false;
     $scope.sliderText = "+";
 
-    $scope.ctrlDrawing = {
-        id : 0,
-        name : "TestDrawing",
-        brush : {
-            id: 0,
-            context: null,
-            type: Brush.Radial,
-            color: '000',
-            size: 10,
-            opacity: 1
-        },
-        layerIdx : 0,
-        layers : [
-            { 
-                index : 0,
-                context: null,
-                lines : [
-                    {
-                        x: [1,1,2,2,3,3,4,4,5,5],
-                        y: [1,1,2,2,3,3,4,4,5,5],
-                        brush: [0, 0, 10, 1]
-                    }
-                ]
-            },
-            { 
-                index : 1,
-                context: null,
-                lines : [
-                    {
-                        x: [1,1,2,2,3,3,4,4,5,5],
-                        y: [1,1,2,2,3,3,4,4,5,5],
-                        brush: [0, 0, 10, 1]
-                    }
-                ]
-            }
-        ],
-        buffer : {
-            context: null,
-            prev: {
-                x:0,
-                y:0
-            },
-            x: [],
-            y: [],
-        }
-    };
-
-    animator($scope.ctrlDrawing, animate);
+    animator(DrawingService, animate);
 
     $scope.menu = function() {
         $scope.menuOpen = !$scope.menuOpen;

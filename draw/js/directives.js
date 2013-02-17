@@ -12,22 +12,23 @@ angular.module('SeedDraw.directives', []).
       restrict: 'E',
       transclude: true,
       scope: {
-          drawing:"="
+          //drawing:"="
       },
-      controller: function($scope, $element) {
-        $scope.drawing.layerIdx = 0;
+      controller: function($scope, $element, DrawingService) {
+        //console.log(DrawingService);
+        //$scope.drawing.layerIdx = 0;
 
-        this.addLayer = function(layer) {
-            $scope.drawing.layers[$scope.drawing.layerIdx].push(layer);
-        }
+        //this.addLayer = function(layer) {
+            //$scope.drawing.layers[$scope.drawing.layerIdx].push(layer);
+        //}
       },
       template:
         '<div class="DrawingDirectiveTop">' +
-          '<layer resize width="{{width}}" height="{{height}}" ng-repeat="layer in drawing.layers" layer="layer" ng-id="Layer{{layer.index}}" class="DrawCanvas"></layer>' +
+          '<layer resize width="{{width}}" height="{{height}}" ng-repeat="layer in DrawingService.GetLayers()" layerID="layer.id" ng-id="Layer{{layer.index}}" class="DrawCanvas"></layer>' +
 		  //'<div class="DrawingContent" ng-transclude></div>'+
-		  '<buffer resize width="{{width}}" height="{{height}}" buffer="drawing.buffer" ng-model="BufferCanvas" ng-id="BufferCanvas{{drawing.id}}" class="DrawCanvas"></buffer>'+
-          '<mouse resize width="{{width}}" height="{{height}}" buffer="drawing.buffer" id="DrawMouseDiv" class="DrawCanvas"></mouse>'+
-          '<brush resize width="{{width}}" height="{{height}}" brush="drawing.brush" ng-id="Brush{{drawing.id}}" class="DrawBrush"></brush>'+
+		  '<buffer resize width="{{width}}" height="{{height}}" ng-model="BufferCanvas" ng-id="BufferCanvas{{drawing.id}}" class="DrawCanvas"></buffer>'+
+          '<mouse resize width="{{width}}" height="{{height}}" id="DrawMouseDiv" class="DrawCanvas"></mouse>'+
+          '<brush resize width="{{width}}" height="{{height}}" ng-id="Brush{{drawing.id}}" class="DrawBrush"></brush>'+
         '</div>',
       replace: true
     };
@@ -38,10 +39,13 @@ angular.module('SeedDraw.directives', []).
       restrict: 'E',
       transclude: true,
       scope: {
-          layer:"="
+          //layer:"="
       },
-      controller: function($scope, $element) {
-        $scope.layer.context = $element[0].getContext('2d');
+      controller: function($scope, $element, $attrs, DrawingService) {
+        //$scope.layer.context = $element[0].getContext('2d');
+        var id = $attrs['layerID'];
+        var context = $element[0].getContext('2d');
+        DrawingService.SetLayerContext(id, context);
       },
       link:function (scope, element, attrs) {
       },
@@ -54,11 +58,11 @@ angular.module('SeedDraw.directives', []).
       require: '^drawing',
       restrict: 'E',
       transclude: true,
-      scope: {
-          buffer:"="
-      },
-      controller: function($scope, $element) {
-        $scope.buffer.context = $element[0].getContext('2d');
+      scope: {},
+      controller: function($scope, $element, DrawingService) {
+        //$scope.buffer.context = $element[0].getContext('2d');
+        var context = $element[0].getContext('2d');
+        DrawingService.SetBufferContext(context);
       },
       link:function (scope, element, attrs) {
       },
@@ -72,37 +76,34 @@ angular.module('SeedDraw.directives', []).
       restrict: 'E',
       transclude: true,
       scope: {
-          brush:"="
       },
-      controller: function($scope, $element) {
+      controller: function($scope, $element, DrawingService) {
+        $scope.brush = DrawingService.GetBrush();
+        
         $scope.RedrawBrush = function() {
-            if(!$scope.brush.element){
-                $scope.brush.element = $element[0];
-            }
+            //$scope.brush.element = $element[0];
+            DrawingService.SetBrushElement($element[0]);
 
-            var size = $scope.brush.size;
-            var center = $scope.brush.size / 2;
-            var color = $scope.brush.color;
+            var brush = DrawingService.GetBrush();
+            var size = brush.size;
+            var center = brush.size / 2;
+            var color = brush.color;
             var cint = parseInt(color, 16);
             var rgb = "rgba("+((cint >> 16) & 255)+","+((cint >> 8) & 255)+","+(cint & 255);
 
-            var ctx = $scope.brush.element.getContext('2d');
+            var ctx = brush.element.getContext('2d');
             ctx.clearRect(0,0,size,size);
             //Redraw the brush
-            if($scope.brush.type == Brush.Marker){
+            console.log("Redrawing Brush");
+            if(brush.type == Brush.Marker){
                 ctx.beginPath();
                 ctx.arc(center, center, center, 0, 2 * Math.PI, false);
-                ctx.fillStyle = "#"+$scope.brush.color;
+                ctx.fillStyle = "#"+brush.color;
                 ctx.fill();
                 ctx.closePath();
             }
-            else if($scope.brush.type == Brush.Radial){
+            else if(brush.type == Brush.Radial){
                 var width = size;//*.95;
-                
-                //ctx.beginPath();
-                //ctx.arc(center,center,center,0,Math.PI*2,false);
-                //ctx.closePath();
-                //ctx.clip();
                 
                 var gradient = ctx.createRadialGradient(center,center,0,center,center,center);  
                 gradient.addColorStop(0, rgb+",1)");
@@ -112,9 +113,17 @@ angular.module('SeedDraw.directives', []).
                 ctx.fillRect(0,0,size,size);
             }
         };
+
+        $scope.$on('RedrawBrush', function(){
+            console.log("Redraw Brush Received");
+            $scope.brush = DrawingService.GetBrush();
+        });
+
+        DrawingService.SetBrushSize(10);
       },
       link:function (scope, element, attrs) {
         scope.$watch(scope.brush, function (type) {
+            console.log("Brush Changed");
             scope.RedrawBrush();
         });
       },
@@ -127,60 +136,68 @@ angular.module('SeedDraw.directives', []).
       require: '^drawing',
       restrict: 'E',
       transclude: true,
-      scope: {
-          buffer:"="
-      },
-      link: function(scope, element, attrs, drawCtrl) {
-        element.bind("mousedown", function(e) {
-            console.log("Mouse down hit");
-            scope.isMouseDown = true;
-            scope.buffer.prev.x = e.x;
-            scope.buffer.prev.y = e.y;
-        });
+      scope: {},
+      controller: function($scope, $element, DrawingService) {
+        $scope.BindMovements = function() {
+            $element.bind("mousedown", function(e) {
+                console.log("Mouse down hit");
+                $scope.isMouseDown = true;
+                console.log(DrawingService);
+                DrawingService.SetPrevious(e.x, e.y);
+                //$scope.buffer.prev.x = e.x;
+                //$scope.buffer.prev.y = e.y;
+            });
 
-        element.bind("mousemove", function(e) {
-            //console.log("Mouse move hit");
-            if(scope.isMouseDown){
-                scope.buffer.x.push(e.x);
-                scope.buffer.y.push(e.y);
-            }
-        });
+            $element.bind("mousemove", function(e) {
+                //console.log("Mouse move hit");
+                if($scope.isMouseDown){
+                    DrawingService.PushToBuffer(e.x, e.y);
+                    //$scope.buffer.x.push(e.x);
+                    //$scope.buffer.y.push(e.y);
+                }
+            });
 
-        element.bind("mouseup", function() {
-            console.log("Mouse up hit");
-            scope.isMouseDown = false;
-        });
+            $element.bind("mouseup", function() {
+                console.log("Mouse up hit");
+                $scope.isMouseDown = false;
+            });
 
-        element.bind("mouseleave", function(e) {
-            console.log("Mouse leave hit");
-            scope.isMouseDown = false;
-        });
+            $element.bind("mouseleave", function(e) {
+                console.log("Mouse leave hit");
+                $scope.isMouseDown = false;
+            });
 
-        element.bind("touchstart", function(e) {
-            e.preventDefault();
-            
-            scope.isMouseDown = true;
-            var x = e.targetTouches[0].clientX;
-            var y = e.targetTouches[0].clientY;
-            scope.buffer.prev.x = x;
-            scope.buffer.prev.y = y;
-        });
-
-        element.bind("touchmove", function(e) {
-            e.preventDefault();
-            if(scope.isMouseDown){
+            $element.bind("touchstart", function(e) {
+                e.preventDefault();
+                
+                $scope.isMouseDown = true;
                 var x = e.targetTouches[0].clientX;
                 var y = e.targetTouches[0].clientY;
-                scope.buffer.x.push(x);
-                scope.buffer.y.push(y);
-            }
-        });
+                DrawingService.SetPrevious(x, y);
+                //$scope.buffer.prev.x = x;
+                //$scope.buffer.prev.y = y;
+            });
 
-        element.bind("touchend", function(e) {
-            e.preventDefault();
-            console.log("touch end hit");
-            scope.isMouseDown = false;
-        });
+            $element.bind("touchmove", function(e) {
+                e.preventDefault();
+                if($scope.isMouseDown){
+                    var x = e.targetTouches[0].clientX;
+                    var y = e.targetTouches[0].clientY;
+                    DrawingService.PushToBuffer(x, y);
+                    //$scope.buffer.x.push(x);
+                    //$scope.buffer.y.push(y);
+                }
+            });
+
+            $element.bind("touchend", function(e) {
+                e.preventDefault();
+                console.log("touch end hit");
+                $scope.isMouseDown = false;
+            });
+        }
+      },
+      link: function(scope, element, attrs) {
+          scope.BindMovements();
       },
       template: '<canvas id="DrawingBrush"></canvas>',
       replace: true
@@ -216,43 +233,3 @@ angular.module('SeedDraw.directives', []).
         });
     };
 });
-
-
-function animator(drawing, animate) {
-    (function tick() {
-        if(drawing.brush.element && drawing.buffer.x.length >= 0){
-            var size = drawing.brush.size;
-            var off = size/2;
-            var imgData = drawing.brush.element;
-            //drawing.brush.context.getImageData(0,0,size,size);
-
-            var context = drawing.buffer.context;
-            for(var i = 0; i < drawing.buffer.x.length; i++){
-                context.drawImage(imgData, drawing.buffer.x[i]-off, drawing.buffer.y[i]-off);
-
-                var xdiff = drawing.buffer.x[i]-drawing.buffer.prev.x;
-                var ydiff = drawing.buffer.y[i]-drawing.buffer.prev.y;
-                var steps = Math.abs(xdiff) > Math.abs(ydiff) ? Math.abs(xdiff) : Math.abs(ydiff);
-
-                if(steps != 0){
-                    var xstep = xdiff / steps;
-                    var ystep = ydiff / steps;
-                    var xsc = 0;
-                    var ysc = 0;
-
-                    for(var k = 1; k < steps+1; k++){
-                        context.drawImage(imgData, drawing.buffer.x[i]-off+xsc, drawing.buffer.y[i]-off+ysc);
-                        xsc -= xstep;
-                        ysc -= ystep;
-                    }
-                }
-                drawing.buffer.prev.x = drawing.buffer.x[i];
-                drawing.buffer.prev.y = drawing.buffer.y[i];
-            }
-            drawing.buffer.x=[];
-            drawing.buffer.y=[];
-        }
-        animate(tick);
-    })();
-}
-
