@@ -2,7 +2,8 @@ from django.shortcuts import render
 from frontpage.models import About, Author, Article, Contributer, Featured
 
 def index(request):
-    latest_articles = Article.objects.all().order_by('-pub_date')[:5]
+    latest_articles = Article.objects.all().order_by('pub_date')[:4]
+
     context = {'latest_articles': latest_articles}
     return render(request, 'home.html', context)
 
@@ -43,3 +44,19 @@ def contact(request):
         'link_start': '../',
     }
     return render(request, 'contact.html', context)
+
+def article_list(request):
+    latest_articles = Article.objects.all().order_by('-pub_date')[:5]
+    context = {
+        'latest_articles': latest_articles,
+        'link_start': '../',
+    }
+    return render(request, 'article_list.html', context)
+
+def article(request):
+    latest_articles = Article.objects.filter(slug=slug).order_by('-pub_date')[:5]
+    context = {
+        'latest_articles': latest_articles,
+        'link_start': '../',
+    }
+    return render(request, 'article.html', context)

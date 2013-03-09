@@ -1,0 +1,86 @@
+.hv-top {
+    width: 100%;
+    height: 100%;
+    clear: both;
+}
+
+.hv-video {
+    width: 96%;
+    height: 90%;
+
+    margin: 2% 2%;
+
+	@include background-image(
+	    radial-gradient(center, 
+	                    ellipse cover, 
+	                    #FFF 0%, 
+	                    #BBB 100%));
+	
+    border: 1px solid #999;
+    @include border-radius(1em);
+    @include box-shadow(#999 5px 5px 5px);
+}
+
+#hv-canvas {
+    width: 90%;
+}
+
+.hv-container {
+    width: 100%;
+    height: 100%;
+
+    @include CompDual;
+}
+
+.hv-article {
+    width: 28%;
+
+    margin: 2% 1.5%;
+    padding: 1% 1% 2em 1%;
+
+    float: left;
+
+    position: relative;
+
+	@include background-image(
+	    radial-gradient(center, 
+	                    ellipse cover, 
+	                    #FFF 0%, 
+	                    #DDD 100%));
+
+    border: 1px solid #BBB;
+    @include border-radius(1em);
+    @include box-shadow(#999 5px 5px 5px);
+
+    font-family: Helvetica;
+}
+
+.hv-article h1 {
+    font-size: 2em;
+    font-weight: 900;
+}
+
+.hv-article h2 {
+    font-size: 1.1em;
+    font-weight: 900;
+}
+
+.hv-article img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @include background-size(cover);
+}
+
+.hv-big-article {
+    width: 88%;
+
+    margin: 1% 5%;
+}
+
+.hv-ellipsis {
+    position: absolute;
+    bottom: .5em;
+    right: 1em;
+}

@@ -60,5 +60,23 @@
         <div class="BodyDiv">
             {% block content %}{% endblock %}
         </div>
+        <div class="footer">
+            <div class="footer-center">
+                <div class="foot-links">
+                    <a href="{{ link_start }}">Home</a><br/>
+                    <a href="{{ link_start }}app/">App</a><br/>
+                    <a href="{{ link_start }}featured/">Featured</a><br/>
+                    <a href="{{ link_start }}blog/">Blog</a><br/>
+                    <a href="{{ link_start }}about/">About</a><br/>
+                    <a href="{{ link_start }}contact/">Contact</a><br/>
+                </div>
+                <div class="foot-img">
+                    <img src="{{link_start}}static_files/img/header.png"></img>
+                </div>
+            </div>
+            <a href="http://www.chrisgladd.com/">
+                <span class="foot-copy">&copy; Chris Gladd | {% now "Y" %}</span>
+            </a>
+        </div>
     </body>
 </html>

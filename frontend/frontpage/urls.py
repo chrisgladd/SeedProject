@@ -9,4 +9,7 @@ urlpatterns = patterns('',
     url(r'^blog/$', views.blog, name='blog'),
     url(r'^about/$', views.about, name='about'),
     url(r'^contact/$', views.contact, name='contact'),
+    url(r'^article/$', views.article_list, name='article_list'),
+    url(r'^article/(?P<slug>\d+)/$', views.article, name='article'),
+    url(r'^article/$', views.contact, name='contact'),
 )

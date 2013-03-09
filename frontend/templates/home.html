@@ -1,21 +1,26 @@
 {% extends "base.html" %}
 
 {% block content %}
-<div class="PostList">
-    {% if latest_blog_list %}
-        {% for blog in latest_blog_list %}
-            <div class="PostBlurb PostDiv">
-                <a href="{{ link_start }}{{ blog.pub_date.date.year }}/{{ blog.pub_date.date.month }}/{{ blog.id }}/{{ blog.slug }}">
-                    <h1>{{ blog.headline }}</h1>
-                </a>
-                <a href="{{ link_start }}{{ blog.pub_date.date.year }}/{{ blog.pub_date.date.month }}/{{ blog.id }}/{{ blog.slug }}">
-                    <span class="PostEllipsis">Read More...</span>
-                </a>
-                {{ blog.content|linebreaks }}
-            </div>
+<div class="hv-top">
+    <div class="hv-video">
+        <canvas id="hv-canvas"></canvas>
+    </div>
+    <div class="hv-container">
+        {% for art in latest_articles %}
+        <div class="{% if forloop.first %}hv-big-article {% endif %}hv-article">
+            <img src="{% if forloop.first %}{{art.large_img}}{% endif %}"></img>
+            <a href="{{ link_start }}article/{{ art.slug }}">
+                <h1>{{ art.headline }}</h1>
+            </a>
+            <a href="{{ link_start }}author/{{art.author.first_name|add:art.author.last_name}}">
+                <h2>{{art.author.first_name|add:" "|add:art.author.last_name}}</h2>
+            </a>
+            <a href="{{ link_start }}article/{{ art.slug }}">
+                <span class="hv-ellipsis">Read More...</span>
+            </a>
+            {{ art.blurb|linebreaks }}
+        </div>
         {% endfor %}
-    {% else %}
-        <p>No blogs are available.</p>
-    {% endif %}
+    </div>
 </div>
 {% endblock %}

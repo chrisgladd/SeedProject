@@ -150,44 +150,49 @@ html, body {
   margin: 0;
   padding: 0;
   background-color: #21231D;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #98af98), color-stop(50%, #eeeeee), color-stop(100%, #98af98));
+  background-image: -webkit-linear-gradient(left, #98af98 0%, #eeeeee 50%, #98af98 100%);
+  background-image: -moz-linear-gradient(left, #98af98 0%, #eeeeee 50%, #98af98 100%);
+  background-image: -o-linear-gradient(left, #98af98 0%, #eeeeee 50%, #98af98 100%);
+  background-image: linear-gradient(left, #98af98 0%, #eeeeee 50%, #98af98 100%);
   text-decoration: none;
   font-size: 100%;
   color: #333;
 }
-/* line 23, ../scss/screen.scss */
+/* line 24, ../scss/screen.scss */
 html ul, body ul {
   list-style: disc;
   padding: 0 0 1em 2em;
 }
-/* line 28, ../scss/screen.scss */
+/* line 29, ../scss/screen.scss */
 html p, body p {
   padding: 0.5em 0;
 }
 
-/* line 33, ../scss/screen.scss */
+/* line 34, ../scss/screen.scss */
 body {
   /*@include background-image(radial-gradient(center, ellipse cover, $base-color 0%, $base-comp0 100%));*/
 }
 
-/* line 36, ../scss/screen.scss */
+/* line 37, ../scss/screen.scss */
 a:link {
   text-decoration: none;
   color: inherit;
 }
 
-/* line 37, ../scss/screen.scss */
+/* line 38, ../scss/screen.scss */
 a:visited {
   text-decoration: none;
   color: inherit;
 }
 
-/* line 38, ../scss/screen.scss */
+/* line 39, ../scss/screen.scss */
 a:active {
   text-decoration: none;
   color: inherit;
 }
 
-/* line 39, ../scss/screen.scss */
+/* line 40, ../scss/screen.scss */
 a:hover {
   text-decoration: none;
   color: inherit;
@@ -195,7 +200,7 @@ a:hover {
 
 /** base.html styles */
 /** Header Styles */
-/* line 46, ../scss/screen.scss */
+/* line 47, ../scss/screen.scss */
 .Header {
   width: 100%;
   height: 150px;
@@ -211,7 +216,7 @@ a:hover {
   background-image: linear-gradient(left, #eeeeee 0%, #eeeeee 30%, #98af98 80%, #98af98 100%);
 }
 
-/* line 58, ../scss/screen.scss */
+/* line 59, ../scss/screen.scss */
 .HeaderTop {
   height: 100%;
   float: left;
@@ -226,7 +231,7 @@ a:hover {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 70, ../scss/screen.scss */
+/* line 71, ../scss/screen.scss */
 .HeaderTop img {
   height: 100%;
 }
@@ -234,7 +239,7 @@ a:hover {
 /**
 * User Top Bar Style
 */
-/* line 79, ../scss/screen.scss */
+/* line 80, ../scss/screen.scss */
 .User {
   width: auto;
   height: 50px;
@@ -246,7 +251,7 @@ a:hover {
   cursor: pointer;
 }
 
-/* line 93, ../scss/screen.scss */
+/* line 94, ../scss/screen.scss */
 .UserImg {
   width: 50px;
   height: 50px;
@@ -264,7 +269,7 @@ a:hover {
   border: none;
 }
 
-/* line 106, ../scss/screen.scss */
+/* line 107, ../scss/screen.scss */
 .UserName {
   font-size: 1.5em;
   font-weight: 900;
@@ -276,7 +281,7 @@ a:hover {
 }
 
 /** Navigation Styles */
-/* line 121, ../scss/screen.scss */
+/* line 122, ../scss/screen.scss */
 .Navigation {
   width: 100%;
   height: 40px;
@@ -285,7 +290,7 @@ a:hover {
   right: 0;
 }
 
-/* line 130, ../scss/screen.scss */
+/* line 131, ../scss/screen.scss */
 .NavBtn {
   height: 100%;
   float: right;
@@ -321,7 +326,7 @@ a:hover {
   color: #AAA;
 }
 
-/* line 141, ../scss/screen.scss */
+/* line 142, ../scss/screen.scss */
 .NavBtn span {
   position: relative;
   top: 20%;
@@ -332,16 +337,173 @@ a:hover {
 }
 
 /** Body styles */
-/* line 154, ../scss/screen.scss */
+/* line 155, ../scss/screen.scss */
 .BodyDiv {
   width: 100%;
-  height: 100%;
+  height: auto;
+  float: left;
   background-color: #EEE;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #98af98), color-stop(30%, #98af98), color-stop(80%, #eeeeee), color-stop(100%, #eeeeee));
-  background-image: -webkit-linear-gradient(left, #98af98 0%, #98af98 30%, #eeeeee 80%, #eeeeee 100%);
-  background-image: -moz-linear-gradient(left, #98af98 0%, #98af98 30%, #eeeeee 80%, #eeeeee 100%);
-  background-image: -o-linear-gradient(left, #98af98 0%, #98af98 30%, #eeeeee 80%, #eeeeee 100%);
-  background-image: linear-gradient(left, #98af98 0%, #98af98 30%, #eeeeee 80%, #eeeeee 100%);
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #98af98), color-stop(50%, #eeeeee), color-stop(100%, #98af98));
+  background-image: -webkit-linear-gradient(left, #98af98 0%, #eeeeee 50%, #98af98 100%);
+  background-image: -moz-linear-gradient(left, #98af98 0%, #eeeeee 50%, #98af98 100%);
+  background-image: -o-linear-gradient(left, #98af98 0%, #eeeeee 50%, #98af98 100%);
+  background-image: linear-gradient(left, #98af98 0%, #eeeeee 50%, #98af98 100%);
+}
+
+/** Footer styles */
+/* line 168, ../scss/screen.scss */
+.footer {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #98af98), color-stop(50%, #eeeeee), color-stop(100%, #98af98));
+  background-image: -webkit-linear-gradient(left, #98af98 0%, #eeeeee 50%, #98af98 100%);
+  background-image: -moz-linear-gradient(left, #98af98 0%, #eeeeee 50%, #98af98 100%);
+  background-image: -o-linear-gradient(left, #98af98 0%, #eeeeee 50%, #98af98 100%);
+  background-image: linear-gradient(left, #98af98 0%, #eeeeee 50%, #98af98 100%);
+  clear: both;
+}
+
+/* line 178, ../scss/screen.scss */
+.footer-center {
+  width: 90%;
+  margin: 0 5%;
+  border-top: 1px solid #aaaaaa;
+}
+
+/* line 186, ../scss/screen.scss */
+.foot-links {
+  display: inline-block;
+  padding: 0 1em 0.5em 1em;
+  margin: 1em 0 0.5em 0;
+  border-right: 2px solid #aaaaaa;
+}
+
+/* line 194, ../scss/screen.scss */
+.foot-links a {
+  display: inline-block;
+  padding: 0.1em 0;
+}
+
+/* line 199, ../scss/screen.scss */
+.foot-img {
+  display: inline-block;
+}
+
+/* line 203, ../scss/screen.scss */
+.foot-img img {
+  width: 15em;
+  margin: 0 1em;
+}
+
+/* line 208, ../scss/screen.scss */
+.foot-copy {
+  position: absolute;
+  right: .5em;
+  bottom: .5em;
 }
 
 /** Page imports **/
+/* line 1, ../scss/_home.scss */
+.hv-top {
+  width: 100%;
+  height: 100%;
+  clear: both;
+}
+
+/* line 7, ../scss/_home.scss */
+.hv-video {
+  width: 96%;
+  height: 90%;
+  margin: 2% 2%;
+  background-image: -webkit-gradient(radial, 50%, 0, 50%, 100, color-stop(0%, #ffffff), color-stop(100%, #bbbbbb));
+  background-image: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%, #bbbbbb 100%);
+  background-image: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #bbbbbb 100%);
+  background-image: -o-radial-gradient(center, ellipse cover, #ffffff 0%, #bbbbbb 100%);
+  background-image: radial-gradient(center, ellipse cover, #ffffff 0%, #bbbbbb 100%);
+  border: 1px solid #999999;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+  border-radius: 1em;
+  -webkit-box-shadow: #999999 5px 5px 5px;
+  -moz-box-shadow: #999999 5px 5px 5px;
+  box-shadow: #999999 5px 5px 5px;
+}
+
+/* line 24, ../scss/_home.scss */
+#hv-canvas {
+  width: 90%;
+}
+
+/* line 28, ../scss/_home.scss */
+.hv-container {
+  width: 100%;
+  height: 100%;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #98af98), color-stop(50%, #eeeeee), color-stop(100%, #98af98));
+  background-image: -webkit-linear-gradient(left, #98af98 0%, #eeeeee 50%, #98af98 100%);
+  background-image: -moz-linear-gradient(left, #98af98 0%, #eeeeee 50%, #98af98 100%);
+  background-image: -o-linear-gradient(left, #98af98 0%, #eeeeee 50%, #98af98 100%);
+  background-image: linear-gradient(left, #98af98 0%, #eeeeee 50%, #98af98 100%);
+}
+
+/* line 35, ../scss/_home.scss */
+.hv-article {
+  width: 28%;
+  margin: 2% 1.5%;
+  padding: 1% 1% 2em 1%;
+  float: left;
+  position: relative;
+  background-image: -webkit-gradient(radial, 50%, 0, 50%, 100, color-stop(0%, #ffffff), color-stop(100%, #dddddd));
+  background-image: -webkit-radial-gradient(center, ellipse cover, #ffffff 0%, #dddddd 100%);
+  background-image: -moz-radial-gradient(center, ellipse cover, #ffffff 0%, #dddddd 100%);
+  background-image: -o-radial-gradient(center, ellipse cover, #ffffff 0%, #dddddd 100%);
+  background-image: radial-gradient(center, ellipse cover, #ffffff 0%, #dddddd 100%);
+  border: 1px solid #bbbbbb;
+  -webkit-border-radius: 1em;
+  -moz-border-radius: 1em;
+  -ms-border-radius: 1em;
+  -o-border-radius: 1em;
+  border-radius: 1em;
+  -webkit-box-shadow: #999999 5px 5px 5px;
+  -moz-box-shadow: #999999 5px 5px 5px;
+  box-shadow: #999999 5px 5px 5px;
+  font-family: Helvetica;
+}
+
+/* line 58, ../scss/_home.scss */
+.hv-article h1 {
+  font-size: 2em;
+  font-weight: 900;
+}
+
+/* line 63, ../scss/_home.scss */
+.hv-article h2 {
+  font-size: 1.1em;
+  font-weight: 900;
+}
+
+/* line 68, ../scss/_home.scss */
+.hv-article img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 76, ../scss/_home.scss */
+.hv-big-article {
+  width: 88%;
+  margin: 1% 5%;
+}
+
+/* line 82, ../scss/_home.scss */
+.hv-ellipsis {
+  position: absolute;
+  bottom: .5em;
+  right: 1em;
+}

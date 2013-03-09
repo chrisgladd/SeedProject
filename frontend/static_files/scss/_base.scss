@@ -115,6 +115,20 @@ $icon-bg : #ffecc8;
     }
 }
 
+@mixin CompDual {
+	@include background-image(linear-gradient(left, 
+		$base-comp2 0%,
+		#EEE 50%,
+		$base-comp2 100%));
+}
+
+@mixin CompDualReverse {
+	@include background-image(linear-gradient(left, 
+		#EEE 0%,
+		$base-comp2 50%,
+		#EEE 100%));
+}
+
 @mixin CompLinear{
 	@include background-image(linear-gradient(left, 
 		#EEE 0%,
