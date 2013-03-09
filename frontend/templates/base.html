@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Seed</title>
+        <link href="{{link_start}}static_files/css/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <link href="{{link_start}}static_files/css/print.css" media="print" rel="stylesheet" type="text/css" />
+        <!--[if IE]>
+            <link href="{{link_start}}static_files/css/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+        <![endif]-->
+	</head>
+	<body>
+        <header class="Header">
+            <a href="{{ link_start }}">
+                <div class="HeaderTop">
+                    <img src="{{link_start}}static_files/img/header.png"></img>
+                </div>
+            </a>
+        </header>
+        <div class="User">
+            <div class="UserLogin">
+                <div class="UserName">Chris Gladd</div>
+                <div class="UserImg"></div>
+            </div>
+            <div class="UserObject">
+            </div>
+        </div>
+        <nav class="Navigation">
+            <a href="{{ link_start }}contact/">
+                <div class="NavBtn">
+                    <span>Contact</span>
+                </div>
+            </a>
+            <a href="{{ link_start }}about/">
+                <div class="NavBtn">
+                    <span>About</span>
+                </div>
+            </a>
+            <a href="{{ link_start }}blog/">
+                <div class="NavBtn">
+                    <span>Blog</span>
+                </div>
+            </a>
+            <a href="{{ link_start }}featured/">
+                <div class="NavBtn">
+                    <span>Featured</span>
+                </div>
+            </a>
+            <a href="{{ link_start }}app/">
+                <div class="NavBtn">
+                    <span>App</span>
+                </div>
+            </a>
+            <a href="{{ link_start }}">
+                <div class="NavBtn">
+                    <span>Home</span>
+                </div>
+            </a>
+        </nav>
+        <div class="BodyDiv">
+            {% block content %}{% endblock %}
+        </div>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="PostList">
+    {% if latest_blog_list %}
+        {% for blog in latest_blog_list %}
+            <div class="PostBlurb PostDiv">
+                <a href="{{ link_start }}{{ blog.pub_date.date.year }}/{{ blog.pub_date.date.month }}/{{ blog.id }}/{{ blog.slug }}">
+                    <h1>{{ blog.headline }}</h1>
+                </a>
+                <a href="{{ link_start }}{{ blog.pub_date.date.year }}/{{ blog.pub_date.date.month }}/{{ blog.id }}/{{ blog.slug }}">
+                    <span class="PostEllipsis">Read More...</span>
+                </a>
+                {{ blog.content|linebreaks }}
+            </div>
+        {% endfor %}
+    {% else %}
+        <p>No blogs are available.</p>
+    {% endif %}
+</div>
+{% endblock %}

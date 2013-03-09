@@ -1,0 +1,78 @@
+/**
+* Menu Panel
+*/
+
+.MenuDiv {
+	position: relative;
+}
+
+.MenuButton {
+	@include sizePos(40%, 30%, relative, 4%, 15%);
+	
+	@media screen and (orientation: landscape) {
+		@include sizePos(30%, 40%, relative, 15%, 4%);
+	}
+	
+	margin: 2%;
+	float: left;
+	
+	/*@include ColorBox;*/
+	@include Icon(3px, 10px);
+	@include box-sizing(border-box);
+	
+	text-align: center;
+	
+	span {
+		font-size: 2em;
+		font-weight: 900;
+		color: #333;
+		position: relative;
+		top: 35%;
+	}
+	
+	.MenuImage {
+		@include box-sizing(border-box);
+		/*@include Icon(2px, 10px);*/
+		@include sizePos(65%, 65%, relative, 16.5%, 5%);
+		margin-bottom: 5%;
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+}
+
+#MenuDraw {
+	.MenuImage {
+		background-image: url('../img/PencilIcon.png');
+		@include background-size(contain);
+	}
+}
+#MenuBranch {
+	.MenuImage {
+		background-image: url('../img/BranchIcon.png');
+		@include background-size(contain);
+	}
+}
+#MenuReplay {
+	.MenuImage {
+		background-image: url('../img/PlayIcon.png');
+		@include background-size(contain);
+	}
+}
+#MenuHistory {
+	.MenuImage {
+		background-image: url('../img/SaveIcon.png');
+		@include background-size(contain);
+	}
+}
+
+.SettingsButton {
+	@include sizePos(10%, 15%, absolute, auto, auto, 0%, 0%);
+	margin: 1%;
+	
+	.MenuImage {
+		@include sizePos(100%, 100%);
+		background-image: url('../img/GearIcon.png');
+		@include background-size(contain);
+	}
+}
+

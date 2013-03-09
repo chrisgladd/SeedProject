@@ -1,0 +1,169 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "base";
+
+html, body {
+	width: 100%;
+	height: 100%;
+	
+	margin : 0;
+	padding : 0;
+	
+	background-color: #21231D;
+	
+	text-decoration: none;
+	
+	font-size: 100%;
+	color: #333;
+
+    ul {
+        list-style: disc;
+        padding: 0 0 1em 2em;
+    }
+
+    p {
+        padding: .5em 0;
+    }
+}
+
+body {
+	/*@include background-image(radial-gradient(center, ellipse cover, $base-color 0%, $base-comp0 100%));*/
+}
+a:link {text-decoration: none; color: inherit;}
+a:visited {text-decoration: none; color: inherit;}
+a:active {text-decoration: none; color: inherit;}
+a:hover {text-decoration: none; color: inherit;}
+
+/** base.html styles */
+
+/** Header Styles */
+$header-height: 150px;
+
+.Header {
+    width: 100%;
+    height: $header-height;
+
+    background-color: #EEE;
+
+    border-bottom: 2px outset #333;
+    @include box-sizing(border-box);
+
+    @include CompLinear;
+}
+
+.HeaderTop {
+    height: 100%;
+
+    float: left;
+
+    background-color: #EEE;
+		
+    border: .5em solid #EEE;
+    @include border-radius(8px);
+
+    @include box-sizing(border-box);
+
+    img {
+        height: 100%;
+    }
+}
+
+
+/**
+* User Top Bar Style
+*/
+.User {
+    width: auto;
+    height: 50px;
+    
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    margin: 5px 5px 0 0;
+    z-index: 99;
+
+    cursor: pointer;
+}
+
+.UserImg {
+    width: 50px;
+    height: 50px;
+    float: right;
+
+    @include border-radius(24px);
+
+    background: transparent url('../img/me.jpg') no-repeat center center;
+    @include background-size(cover);
+
+    border: none;
+}
+
+.UserName {
+    font-size: 1.5em;
+    font-weight: 900;
+    color: #111;
+
+    float: right;
+    position: relative;
+    top: 15px;
+
+    margin-left: 8px;
+}
+
+
+/** Navigation Styles */
+$nav-height: 40px;
+.Navigation {
+    width: 100%;
+    height: $nav-height;
+
+    position: absolute;
+    top: ($header-height - $nav-height - 2px);
+    right: 0;
+}
+
+.NavBtn {
+    height: 100%;
+
+    float: right;
+
+    padding: 0 1em;
+    margin: 0 .2em;
+
+    @include GreenBtn;
+}
+
+.NavBtn span {
+    position: relative;
+    top: 20%;
+
+    font-family: Helvetica;
+    font-size: 1.5em;
+    font-weight: 900;
+
+    color: #000;
+}
+
+
+/** Body styles */
+.BodyDiv {
+    width: 100%;
+    height: 100%;
+    background-color: #EEE;
+
+    @include CompLinearReverse;
+}
+
+
+/** Page imports **/
+@import "home";
+@import "app";
+@import "featured";
+@import "blog";
+@import "about";
+@import "contact";

@@ -2,7 +2,7 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 17, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,45 +24,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -72,7 +72,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  * framework utitlities, and custom mixins.
  * It does not compile to .css
  */
-/* line 17, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -94,50 +94,51 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
 
-/*  etc.  */
+/*  Media Queries  */
+/** Basic Colors  */
 /** 
  * Yellow-Orange Theme 
  * $base-light : #fff95e;
@@ -233,7 +234,7 @@ body {
 /**
 * Login Panel
 */
-/* line 68, ../scss/screen.scss */
+/* line 7, ../scss/_login.scss */
 #LoginForm {
   position: absolute;
   width: 40%;
@@ -256,7 +257,7 @@ body {
   box-shadow: 2px 2px 3px #666666;
 }
 @media screen and (orientation: landscape) {
-  /* line 68, ../scss/screen.scss */
+  /* line 7, ../scss/_login.scss */
   #LoginForm {
     width: 50%;
     height: 70%;
@@ -267,7 +268,7 @@ body {
     box-sizing: border-box;
   }
 }
-/* line 76, ../scss/screen.scss */
+/* line 15, ../scss/_login.scss */
 #LoginForm input {
   color: #222;
   font-size: 1.3em;
@@ -275,14 +276,14 @@ body {
   font-family: 'Helvetica';
 }
 
-/* line 87, ../scss/screen.scss */
+/* line 26, ../scss/_login.scss */
 .LoginText {
   width: 90%;
   height: 2em;
   margin: 5%;
 }
 
-/* line 94, ../scss/screen.scss */
+/* line 33, ../scss/_login.scss */
 .LoginBtn {
   width: 50%;
   height: 20%;
@@ -296,12 +297,12 @@ body {
 /**
 * Menu Panel
 */
-/* line 102, ../scss/screen.scss */
+/* line 5, ../scss/_menu.scss */
 .MenuDiv {
   position: relative;
 }
 
-/* line 106, ../scss/screen.scss */
+/* line 9, ../scss/_menu.scss */
 .MenuButton {
   width: 40%;
   height: 30%;
@@ -329,7 +330,7 @@ body {
   text-align: center;
 }
 @media screen and (orientation: landscape) {
-  /* line 106, ../scss/screen.scss */
+  /* line 9, ../scss/_menu.scss */
   .MenuButton {
     width: 30%;
     height: 40%;
@@ -340,7 +341,7 @@ body {
     bottom: auto;
   }
 }
-/* line 122, ../scss/screen.scss */
+/* line 25, ../scss/_menu.scss */
 .MenuButton span {
   font-size: 2em;
   font-weight: 900;
@@ -348,7 +349,7 @@ body {
   position: relative;
   top: 35%;
 }
-/* line 130, ../scss/screen.scss */
+/* line 33, ../scss/_menu.scss */
 .MenuButton .MenuImage {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -366,43 +367,43 @@ body {
   background-position: center center;
 }
 
-/* line 141, ../scss/screen.scss */
+/* line 44, ../scss/_menu.scss */
 #MenuDraw .MenuImage {
   background-image: url("../img/PencilIcon.png");
-  -webkit-background-size: 80%;
-  -moz-background-size: 80%;
-  -o-background-size: 80%;
-  background-size: 80%;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
 }
 
-/* line 147, ../scss/screen.scss */
+/* line 50, ../scss/_menu.scss */
 #MenuBranch .MenuImage {
   background-image: url("../img/BranchIcon.png");
-  -webkit-background-size: 80%;
-  -moz-background-size: 80%;
-  -o-background-size: 80%;
-  background-size: 80%;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
 }
 
-/* line 153, ../scss/screen.scss */
+/* line 56, ../scss/_menu.scss */
 #MenuReplay .MenuImage {
   background-image: url("../img/PlayIcon.png");
-  -webkit-background-size: 80%;
-  -moz-background-size: 80%;
-  -o-background-size: 80%;
-  background-size: 80%;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
 }
 
-/* line 159, ../scss/screen.scss */
+/* line 62, ../scss/_menu.scss */
 #MenuHistory .MenuImage {
   background-image: url("../img/SaveIcon.png");
-  -webkit-background-size: 80%;
-  -moz-background-size: 80%;
-  -o-background-size: 80%;
-  background-size: 80%;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
 }
 
-/* line 165, ../scss/screen.scss */
+/* line 68, ../scss/_menu.scss */
 .SettingsButton {
   width: 10%;
   height: 15%;
@@ -413,7 +414,7 @@ body {
   bottom: 0%;
   margin: 1%;
 }
-/* line 169, ../scss/screen.scss */
+/* line 72, ../scss/_menu.scss */
 .SettingsButton .MenuImage {
   width: 100%;
   height: 100%;
@@ -432,7 +433,7 @@ body {
 /**
 * Draw Panel
 */
-/* line 179, ../scss/screen.scss */
+/* line 4, ../scss/_draw.scss */
 .DrawDiv {
   width: 100%;
   height: 100%;
@@ -440,13 +441,13 @@ body {
   overflow: hidden;
 }
 
-/* line 186, ../scss/screen.scss */
+/* line 11, ../scss/_draw.scss */
 .DrawContainer {
   width: 100%;
   height: 100%;
 }
 
-/* line 190, ../scss/screen.scss */
+/* line 15, ../scss/_draw.scss */
 .DrawCanvas {
   width: auto;
   height: auto;
@@ -457,7 +458,7 @@ body {
   bottom: auto;
 }
 
-/* line 194, ../scss/screen.scss */
+/* line 19, ../scss/_draw.scss */
 .DrawMouseDiv {
   width: auto;
   height: auto;
@@ -468,7 +469,7 @@ body {
   bottom: auto;
 }
 
-/* line 198, ../scss/screen.scss */
+/* line 23, ../scss/_draw.scss */
 .DrawBrush {
   display: none;
 }
@@ -476,18 +477,17 @@ body {
 /**
 * Drawing Menu
 */
-/* line 205, ../scss/screen.scss */
+/* line 30, ../scss/_draw.scss */
 .DrawMenu {
-  width: 100%;
-  height: 10%;
+  width: 10%;
+  height: 100%;
   position: absolute;
-  left: -11%;
-  right: auto;
+  left: auto;
+  right: -11%;
   top: auto;
   bottom: 0%;
-  min-height: 50px;
-  min-width: auto;
-  display: none;
+  min-width: 50px;
+  min-height: auto;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -495,22 +495,8 @@ body {
   border-left: 1px solid #777777;
   z-index: 1;
 }
-@media screen and (orientation: landscape) {
-  /* line 205, ../scss/screen.scss */
-  .DrawMenu {
-    width: 10%;
-    height: 100%;
-    position: absolute;
-    left: auto;
-    right: -11%;
-    top: auto;
-    bottom: 0%;
-    min-width: 50px;
-    min-height: auto;
-  }
-}
 
-/* line 224, ../scss/screen.scss */
+/* line 42, ../scss/_draw.scss */
 .DrawMenuOpen {
   width: 100%;
   height: 10%;
@@ -522,7 +508,7 @@ body {
   display: block;
 }
 @media screen and (orientation: landscape) {
-  /* line 224, ../scss/screen.scss */
+  /* line 42, ../scss/_draw.scss */
   .DrawMenuOpen {
     width: 10%;
     height: 100%;
@@ -534,115 +520,102 @@ body {
   }
 }
 
-/* line 233, ../scss/screen.scss */
+/* line 51, ../scss/_draw.scss */
 .DrawBtn {
   float: left;
-  width: 12.1%;
-  height: 80%;
+  width: 94%;
+  height: 13.4%;
   position: relative;
   left: 0%;
   right: auto;
   top: 0%;
   bottom: auto;
-  margin: 1%;
+  margin: 2% 3%;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  border-radius: 15px;
   background-color: #ffecc8;
-  border: 1px #291b00 solid;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  -o-border-radius: 10px;
-  border-radius: 10px;
-  -webkit-box-shadow: 2px 2px 3px #666666;
-  -moz-box-shadow: 2px 2px 3px #666666;
-  box-shadow: 2px 2px 3px #666666;
   background-repeat: no-repeat;
   background-position: center center;
 }
-@media screen and (orientation: landscape) {
-  /* line 233, ../scss/screen.scss */
-  .DrawBtn {
-    width: 80%;
-    height: 12.1%;
-    position: relative;
-    left: 0%;
-    right: auto;
-    top: 0%;
-    bottom: auto;
-    margin: 5% 7%;
-  }
-}
-/* line 243, ../scss/screen.scss */
+/* line 62, ../scss/_draw.scss */
 .DrawBtn span {
   display: none;
 }
 
-/* line 252, ../scss/screen.scss */
+/* line 67, ../scss/_draw.scss */
 #PencilBtn {
   background-image: url("../img/PencilIcon.png");
   -webkit-background-size: 80%;
   -moz-background-size: 80%;
   -o-background-size: 80%;
   background-size: 80%;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
 }
 
-/* line 256, ../scss/screen.scss */
+/* line 72, ../scss/_draw.scss */
 #EraseBtn {
   background-image: url("../img/EraseIcon.png");
-  -webkit-background-size: 80%;
-  -moz-background-size: 80%;
-  -o-background-size: 80%;
-  background-size: 80%;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
 }
 
-/* line 260, ../scss/screen.scss */
+/* line 76, ../scss/_draw.scss */
 #UndoBtn {
   background-image: url("../img/UndoIcon.png");
-  -webkit-background-size: 80%;
-  -moz-background-size: 80%;
-  -o-background-size: 80%;
-  background-size: 80%;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
 }
 
-/* line 264, ../scss/screen.scss */
+/* line 80, ../scss/_draw.scss */
 #LayerBtn {
   background-image: url("../img/LayerIcon.png");
-  -webkit-background-size: 80%;
-  -moz-background-size: 80%;
-  -o-background-size: 80%;
-  background-size: 80%;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
 }
 
-/* line 268, ../scss/screen.scss */
+/* line 84, ../scss/_draw.scss */
 #PaletteBtn {
   background-image: url("../img/PaletteIcon.png");
-  -webkit-background-size: 80%;
-  -moz-background-size: 80%;
-  -o-background-size: 80%;
-  background-size: 80%;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
 }
 
-/* line 272, ../scss/screen.scss */
+/* line 88, ../scss/_draw.scss */
 #SaveBtn {
   background-image: url("../img/SaveIcon.png");
-  -webkit-background-size: 80%;
-  -moz-background-size: 80%;
-  -o-background-size: 80%;
-  background-size: 80%;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
 }
 
-/* line 276, ../scss/screen.scss */
+/* line 92, ../scss/_draw.scss */
 #BackBtn {
   background-image: url("../img/BackIcon.png");
-  -webkit-background-size: 80%;
-  -moz-background-size: 80%;
-  -o-background-size: 80%;
-  background-size: 80%;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
 }
 
-/* line 281, ../scss/screen.scss */
+/* line 97, ../scss/_draw.scss */
 .DrawMenuSlider {
-  width: 10%;
-  height: 7%;
+  width: 4em;
+  height: 4em;
   position: absolute;
   left: auto;
   right: 0%;
@@ -656,47 +629,24 @@ body {
   text-align: center;
   cursor: pointer;
 }
-@media screen and (orientation: landscape) {
-  /* line 281, ../scss/screen.scss */
-  .DrawMenuSlider {
-    width: 7%;
-    height: 10%;
-    position: absolute;
-    left: auto;
-    right: 0%;
-    top: auto;
-    bottom: 0%;
-  }
-}
-/* line 293, ../scss/screen.scss */
+/* line 106, ../scss/_draw.scss */
 .DrawMenuSlider span {
   opacity: 1;
   color: #FFF;
+  font-family: Arial;
+  font-size: 3.8em;
   font-weight: 900;
-  font-size: 1.8em;
   position: relative;
-  top: 5%;
+  top: 0%;
 }
 
-/* line 304, ../scss/screen.scss */
+/* line 118, ../scss/_draw.scss */
 .DrawMenuSliderOpen {
-  width: 10%;
-  height: 7%;
+  width: 7%;
+  height: 10%;
   position: absolute;
   left: auto;
   right: 10%;
   top: auto;
   bottom: 0%;
-}
-@media screen and (orientation: landscape) {
-  /* line 304, ../scss/screen.scss */
-  .DrawMenuSliderOpen {
-    width: 7%;
-    height: 10%;
-    position: absolute;
-    left: auto;
-    right: 10%;
-    top: auto;
-    bottom: 0%;
-  }
 }

@@ -36,7 +36,7 @@ function DrawCtrl($scope, $location, DrawingService, animate) {
 
     $scope.menu = function() {
         $scope.menuOpen = !$scope.menuOpen;
-        $scope.sliderText = $scope.menuOpen ? "-" : "+";
+        $scope.sliderText = $scope.menuOpen ? "X" : "+";
     };
 
     $scope.pencil = function() {

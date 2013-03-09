@@ -1,0 +1,120 @@
+/**
+* Draw Panel
+*/
+.DrawDiv{
+	@include full;
+	background-color: white;
+
+	overflow: hidden;
+}
+
+.DrawContainer {
+	@include full;
+}
+
+.DrawCanvas {
+	@include sizePos(auto, auto, absolute, 0%, 0%);
+}
+
+.DrawMouseDiv {
+	@include sizePos(auto, auto, absolute, 0%, 0%);
+}
+
+.DrawBrush {
+    display: none;
+}
+
+/**
+* Drawing Menu
+*/
+.DrawMenu {
+	@include sizePos(10%, 100%, absolute, auto, auto, -11%, 0%);
+	min-width: 50px;
+	min-height: auto;
+	
+	@include box-sizing(border-box);
+	background-color: adjust-saturation($base-dark, 30%);
+	border-left: 1px solid #777;
+	
+	z-index: 1;
+}
+
+.DrawMenuOpen{
+	@include sizePos(100%, 10%, absolute, 0%, auto, auto, 0%);
+	display: block;
+	
+	@media screen and (orientation: landscape) {
+		@include sizePos(10%, 100%, absolute, auto, auto, 0%, 0%);
+	}
+}
+
+.DrawBtn {
+	float: left;
+	@include sizePos(94%, 13.4%);
+	margin: 2% 3%;
+
+	@include border-radius(15px);
+	
+	background-color: $icon-bg;
+	background-repeat: no-repeat;
+	background-position: center center;
+
+	span {
+		display: none;
+	}
+}
+
+#PencilBtn {
+	background-image: url('../img/PencilIcon.png');
+	@include background-size(80%);
+	@include background-size(contain);
+}
+#EraseBtn {
+	background-image: url('../img/EraseIcon.png');
+	@include background-size(contain);
+}
+#UndoBtn {
+	background-image: url('../img/UndoIcon.png');
+	@include background-size(contain);
+}
+#LayerBtn {
+	background-image: url('../img/LayerIcon.png');
+	@include background-size(contain);
+}
+#PaletteBtn {
+	background-image: url('../img/PaletteIcon.png');
+	@include background-size(contain);
+}
+#SaveBtn {
+	background-image: url('../img/SaveIcon.png');
+	@include background-size(contain);
+}
+#BackBtn {
+	background-image: url('../img/BackIcon.png');
+	@include background-size(contain);
+}
+
+.DrawMenuSlider {
+	@include sizePos(4em, 4em, absolute, auto, auto, 0%, 0%);
+	
+	background: #333;
+	opacity: .4;
+	@include border-top-left-radius(7px);
+	text-align: center;
+	cursor: pointer;
+	
+	span {
+		opacity: 1;
+		color: #FFF;
+		font-family: Arial;
+		font-size: 3.8em;
+		font-weight: 900;
+		
+		position:relative;
+		top: 0%;
+	}
+}
+
+.DrawMenuSliderOpen {
+	@include sizePos(7%, 10%, absolute, auto, auto, 10%, 0%);
+}

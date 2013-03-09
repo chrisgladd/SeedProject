@@ -1,0 +1,36 @@
+/**
+* Login Panel
+*/
+
+.LoginDiv {}
+
+#LoginForm {
+	position: absolute;
+	
+	@include center(40%, 90%);
+	@media screen and (orientation: landscape) {
+		@include center(50%, 70%);
+	}
+	
+	input {
+		color: #222;
+		font-size: 1.3em;
+		font-weight: 900;
+		font-family: 'Helvetica';
+	}
+	
+	/*@include ColorBox;*/
+	@include Icon(2px, 7px);
+}
+
+.LoginText {
+	width: 90%;
+	height: 2em;
+	
+	margin: 5%;
+}
+
+.LoginBtn {
+	@include sizePos(50%, 20%, absolute, auto, auto, 5%, 5%);
+}
+
