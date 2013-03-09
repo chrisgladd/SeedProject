@@ -1,0 +1,347 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* _base.scss
+ * This is the base stylesheet with common variables,
+ * framework utitlities, and custom mixins.
+ * It does not compile to .css
+ */
+/* line 17, ../../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../lib/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/*  Media Queries  */
+/** Basic Colors  */
+/** Created from $base-color on kuler.adobe.com */
+/** Monochromatics */
+/** Analagous */
+/** Other */
+/* line 9, ../scss/screen.scss */
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #21231D;
+  text-decoration: none;
+  font-size: 100%;
+  color: #333;
+}
+/* line 23, ../scss/screen.scss */
+html ul, body ul {
+  list-style: disc;
+  padding: 0 0 1em 2em;
+}
+/* line 28, ../scss/screen.scss */
+html p, body p {
+  padding: 0.5em 0;
+}
+
+/* line 33, ../scss/screen.scss */
+body {
+  /*@include background-image(radial-gradient(center, ellipse cover, $base-color 0%, $base-comp0 100%));*/
+}
+
+/* line 36, ../scss/screen.scss */
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 37, ../scss/screen.scss */
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 38, ../scss/screen.scss */
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 39, ../scss/screen.scss */
+a:hover {
+  text-decoration: none;
+  color: inherit;
+}
+
+/** base.html styles */
+/** Header Styles */
+/* line 46, ../scss/screen.scss */
+.Header {
+  width: 100%;
+  height: 150px;
+  background-color: #EEE;
+  border-bottom: 2px outset #333333;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #eeeeee), color-stop(30%, #eeeeee), color-stop(80%, #98af98), color-stop(100%, #98af98));
+  background-image: -webkit-linear-gradient(left, #eeeeee 0%, #eeeeee 30%, #98af98 80%, #98af98 100%);
+  background-image: -moz-linear-gradient(left, #eeeeee 0%, #eeeeee 30%, #98af98 80%, #98af98 100%);
+  background-image: -o-linear-gradient(left, #eeeeee 0%, #eeeeee 30%, #98af98 80%, #98af98 100%);
+  background-image: linear-gradient(left, #eeeeee 0%, #eeeeee 30%, #98af98 80%, #98af98 100%);
+}
+
+/* line 58, ../scss/screen.scss */
+.HeaderTop {
+  height: 100%;
+  float: left;
+  background-color: #EEE;
+  border: 0.5em solid #eeeeee;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  border-radius: 8px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* line 70, ../scss/screen.scss */
+.HeaderTop img {
+  height: 100%;
+}
+
+/**
+* User Top Bar Style
+*/
+/* line 79, ../scss/screen.scss */
+.User {
+  width: auto;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 5px 5px 0 0;
+  z-index: 99;
+  cursor: pointer;
+}
+
+/* line 93, ../scss/screen.scss */
+.UserImg {
+  width: 50px;
+  height: 50px;
+  float: right;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+  border-radius: 24px;
+  background: transparent url("../img/me.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  border: none;
+}
+
+/* line 106, ../scss/screen.scss */
+.UserName {
+  font-size: 1.5em;
+  font-weight: 900;
+  color: #111;
+  float: right;
+  position: relative;
+  top: 15px;
+  margin-left: 8px;
+}
+
+/** Navigation Styles */
+/* line 121, ../scss/screen.scss */
+.Navigation {
+  width: 100%;
+  height: 40px;
+  position: absolute;
+  top: 108px;
+  right: 0;
+}
+
+/* line 130, ../scss/screen.scss */
+.NavBtn {
+  height: 100%;
+  float: right;
+  padding: 0 1em;
+  margin: 0 0.2em;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #68be32), color-stop(50%, #3e9822), color-stop(51%, #1f8f0c), color-stop(100%, #45a525));
+  background-image: -webkit-linear-gradient(top, #68be32 0%, #3e9822 50%, #1f8f0c 51%, #45a525 100%);
+  background-image: -moz-linear-gradient(top, #68be32 0%, #3e9822 50%, #1f8f0c 51%, #45a525 100%);
+  background-image: -o-linear-gradient(top, #68be32 0%, #3e9822 50%, #1f8f0c 51%, #45a525 100%);
+  background-image: linear-gradient(top, #68be32 0%, #3e9822 50%, #1f8f0c 51%, #45a525 100%);
+  border-left: 2px solid #333333;
+  border-top: 1px solid #333333;
+  border-right: 2px solid #333333;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 0.1em;
+  -moz-border-radius: 0.1em;
+  -ms-border-radius: 0.1em;
+  -o-border-radius: 0.1em;
+  border-radius: 0.1em;
+}
+/* line 105, ../scss/_base.scss */
+.NavBtn:hover {
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #3c6d1d), color-stop(50%, #1c450f), color-stop(51%, #0b3104), color-stop(100%, #225212));
+  background-image: -webkit-linear-gradient(top, #3c6d1d 0%, #1c450f 50%, #0b3104 51%, #225212 100%);
+  background-image: -moz-linear-gradient(top, #3c6d1d 0%, #1c450f 50%, #0b3104 51%, #225212 100%);
+  background-image: -o-linear-gradient(top, #3c6d1d 0%, #1c450f 50%, #0b3104 51%, #225212 100%);
+  background-image: linear-gradient(top, #3c6d1d 0%, #1c450f 50%, #0b3104 51%, #225212 100%);
+}
+/* line 112, ../scss/_base.scss */
+.NavBtn:hover span {
+  color: #AAA;
+}
+
+/* line 141, ../scss/screen.scss */
+.NavBtn span {
+  position: relative;
+  top: 20%;
+  font-family: Helvetica;
+  font-size: 1.5em;
+  font-weight: 900;
+  color: #000;
+}
+
+/** Body styles */
+/* line 154, ../scss/screen.scss */
+.BodyDiv {
+  width: 100%;
+  height: 100%;
+  background-color: #EEE;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, #98af98), color-stop(30%, #98af98), color-stop(80%, #eeeeee), color-stop(100%, #eeeeee));
+  background-image: -webkit-linear-gradient(left, #98af98 0%, #98af98 30%, #eeeeee 80%, #eeeeee 100%);
+  background-image: -moz-linear-gradient(left, #98af98 0%, #98af98 30%, #eeeeee 80%, #eeeeee 100%);
+  background-image: -o-linear-gradient(left, #98af98 0%, #98af98 30%, #eeeeee 80%, #eeeeee 100%);
+  background-image: linear-gradient(left, #98af98 0%, #98af98 30%, #eeeeee 80%, #eeeeee 100%);
+}
+
+/** Page imports **/

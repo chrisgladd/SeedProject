@@ -1,0 +1,132 @@
+/* _base.scss
+ * This is the base stylesheet with common variables,
+ * framework utitlities, and custom mixins.
+ * It does not compile to .css
+ */
+@import "compass/reset";
+@import "compass/css3";
+@import "compass/utilities";
+@import "blueprint";
+
+/*  Media Queries  */
+$mq-mobile-portrait		: 320px !default;
+$mq-mobile-landscape	: 480px !default;
+$mq-tablet-portrait		: 768px !default;
+$mq-tablet-landscape	: 1024px !default;
+$mq-desktop-min         : 1100px !default;
+$mq-desktop				: 1382px !default;
+ 
+// Everything up to desktop size
+@mixin device {
+	@media (max-width : $mq-tablet-landscape + 1) {
+		@content;
+	}
+}
+
+// Everything up to and including the mobile portrait
+@mixin mobile-portrait {
+	@media (max-width : $mq-mobile-portrait) {
+		@content;
+	}
+}
+
+// Everthing larger than a portrait mobile up until mobile landscape
+@mixin mobile-landscape {
+	@media only screen and (min-width : $mq-mobile-portrait + 1) and (max-width : $mq-mobile-landscape) {
+		@content;
+	}
+}
+ 
+// Larger than a landscape mobile but less than or equal to a landscape tablet
+@mixin tablet-portrait {
+	@media only screen and (min-width : $mq-mobile-landscape + 1) and (max-width : $mq-tablet-landscape - 1) {
+		@content;
+	}
+}
+ 
+//Between Tablet and Full Desktop
+@mixin tablet-to-desktop {
+	@media only screen and (min-width : $mq-tablet-portrait + 1) and (max-width : $mq-desktop-min - 1) {
+		@content;
+	}
+}
+
+// Retina screens have a 1.5 pixel ratio, not 2
+@mixin retina {
+	@media only screen and (-webkit-min-device-pixel-ratio : 1.5), only screen and (min-device-pixel-ratio : 1.5) {
+		@content;
+	}
+}
+
+
+/** Basic Colors  */
+
+/** Created from $base-color on kuler.adobe.com */
+
+$base-color : #386338;
+
+/** Monochromatics */
+$base-comp0 : #6C7C6C;
+$base-comp1 : #63AF63;
+$base-comp2 : #98AF98;
+$base-comp3 : #8FFC8F;
+
+/** Analagous */
+$base-ana0 : #3F7A50;
+$base-ana1 : #3A7058;
+$base-ana2 : #537A3F;
+
+/** Other */
+$base-brown : #6d5d3e;
+
+$icon-border : #291b00;
+$icon-bg : #ffecc8;
+
+@mixin Icon($border-width:9px, $border-radius:5px) {
+	background-color: $icon-bg;
+	border: $border-width $icon-border solid;
+	@include border-radius($border-radius);
+	@include single-box-shadow(#666, 2px, 2px, 3px);
+}
+
+@mixin GreenBtn {
+	@include background-image(linear-gradient(top, 
+		#68be32 0%,
+		#3e9822 50%,
+		#1f8f0c 51%,
+		#45a525 100%));
+
+    border-left: 2px solid #333;
+    border-top: 1px solid #333;
+    border-right: 2px solid #333;
+    @include box-sizing(border-box);
+    @include border-radius(.1em);
+
+    &:hover {
+        @include background-image(linear-gradient(top, 
+            darken(#68be32, 20%) 0%,
+            darken(#3e9822, 20%) 50%,
+            darken(#1f8f0c, 20%) 51%,
+            darken(#45a525, 20%) 100%));
+
+        span {
+            color: #AAA;
+        }
+    }
+}
+
+@mixin CompLinear{
+	@include background-image(linear-gradient(left, 
+		#EEE 0%,
+		#EEE 30%,
+		$base-comp2 80%,
+		$base-comp2 100%));
+}
+
+@mixin CompLinearReverse{
+	@include background-image(linear-gradient(left, 
+		$base-comp2 0%,
+		$base-comp2 30%,
+		#EEE 80%,
+		#EEE 100%));
+}
