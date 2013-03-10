@@ -28,9 +28,12 @@ function MenuCtrl($scope, $location) {
     };
 }
 
-function DrawCtrl($scope, $location, DrawingService, animate) {
+function DrawCtrl($scope, $location, DrawingService, animate, Brushes) {
     $scope.menuOpen = false;
     $scope.sliderText = "+";
+    $scope.tips = Brushes;
+    $scope.pencilOpen = false;
+    $scope.brushSize = 25;
 
     animator(DrawingService, animate);
 
@@ -42,6 +45,15 @@ function DrawCtrl($scope, $location, DrawingService, animate) {
     $scope.pencil = function() {
         $scope.pencilOpen = !$scope.pencilOpen;
     };
+
+    $scope.setBrushType = function(type) {
+        console.log("BrushType: " + type);
+        DrawingService.SetBrushType(type);
+    };
+
+    $scope.$watch("brushSize", function(value) {
+        DrawingService.SetBrushSize(value);
+    });
 
     $scope.erase = function() {
         $scope.eraseOpen = !$scope.eraseOpen;

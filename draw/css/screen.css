@@ -520,7 +520,7 @@ body {
   }
 }
 
-/* line 51, ../scss/_draw.scss */
+/* line 53, ../scss/_draw.scss */
 .DrawBtn {
   float: left;
   width: 94%;
@@ -540,12 +540,12 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
 }
-/* line 62, ../scss/_draw.scss */
+/* line 64, ../scss/_draw.scss */
 .DrawBtn span {
   display: none;
 }
 
-/* line 67, ../scss/_draw.scss */
+/* line 69, ../scss/_draw.scss */
 #PencilBtn {
   background-image: url("../img/PencilIcon.png");
   -webkit-background-size: 80%;
@@ -558,7 +558,7 @@ body {
   background-size: contain;
 }
 
-/* line 72, ../scss/_draw.scss */
+/* line 74, ../scss/_draw.scss */
 #EraseBtn {
   background-image: url("../img/EraseIcon.png");
   -webkit-background-size: contain;
@@ -567,7 +567,7 @@ body {
   background-size: contain;
 }
 
-/* line 76, ../scss/_draw.scss */
+/* line 78, ../scss/_draw.scss */
 #UndoBtn {
   background-image: url("../img/UndoIcon.png");
   -webkit-background-size: contain;
@@ -576,7 +576,7 @@ body {
   background-size: contain;
 }
 
-/* line 80, ../scss/_draw.scss */
+/* line 82, ../scss/_draw.scss */
 #LayerBtn {
   background-image: url("../img/LayerIcon.png");
   -webkit-background-size: contain;
@@ -585,7 +585,7 @@ body {
   background-size: contain;
 }
 
-/* line 84, ../scss/_draw.scss */
+/* line 86, ../scss/_draw.scss */
 #PaletteBtn {
   background-image: url("../img/PaletteIcon.png");
   -webkit-background-size: contain;
@@ -594,7 +594,7 @@ body {
   background-size: contain;
 }
 
-/* line 88, ../scss/_draw.scss */
+/* line 90, ../scss/_draw.scss */
 #SaveBtn {
   background-image: url("../img/SaveIcon.png");
   -webkit-background-size: contain;
@@ -603,7 +603,7 @@ body {
   background-size: contain;
 }
 
-/* line 92, ../scss/_draw.scss */
+/* line 94, ../scss/_draw.scss */
 #BackBtn {
   background-image: url("../img/BackIcon.png");
   -webkit-background-size: contain;
@@ -612,7 +612,7 @@ body {
   background-size: contain;
 }
 
-/* line 97, ../scss/_draw.scss */
+/* line 99, ../scss/_draw.scss */
 .DrawMenuSlider {
   width: 4em;
   height: 4em;
@@ -629,7 +629,7 @@ body {
   text-align: center;
   cursor: pointer;
 }
-/* line 106, ../scss/_draw.scss */
+/* line 108, ../scss/_draw.scss */
 .DrawMenuSlider span {
   opacity: 1;
   color: #FFF;
@@ -640,7 +640,7 @@ body {
   top: 0%;
 }
 
-/* line 118, ../scss/_draw.scss */
+/* line 120, ../scss/_draw.scss */
 .DrawMenuSliderOpen {
   width: 7%;
   height: 10%;
@@ -649,4 +649,52 @@ body {
   right: 10%;
   top: auto;
   bottom: 0%;
+}
+
+/* line 125, ../scss/_draw.scss */
+.draw-brush {
+  width: 180px;
+  height: 100%;
+  position: absolute;
+  top: -4%;
+  right: 104%;
+  clear: both;
+  border-top: 1px solid #888888;
+  border-bottom: 1px solid #888888;
+  border-left: 1px solid #888888;
+  background-color: #ffecc8;
+}
+
+/* line 141, ../scss/_draw.scss */
+.draw-tip-ul {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 146, ../scss/_draw.scss */
+.draw-tip-li {
+  float: left;
+}
+
+/* line 150, ../scss/_draw.scss */
+.draw-tip-li img {
+  height: 100%;
+}
+
+/* line 154, ../scss/_draw.scss */
+.draw-size-li {
+  float: left;
+  width: 100%;
+}
+
+/* line 158, ../scss/_draw.scss */
+.draw-size {
+  width: 180px;
+  background-color: #FFF;
+}
+
+/* line 164, ../scss/_draw.scss */
+#draw-size-range {
+  width: 100%;
+  background-color: #FFF;
 }

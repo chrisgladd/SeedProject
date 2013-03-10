@@ -4,6 +4,16 @@
 	<div ng-class="{DrawMenuOpen:menuOpen}" class="DrawMenu">
 		<div ng-click="pencil()" id="PencilBtn" class="DrawBtn">
 			<span>Pencil</span>
+            <div ng-show="pencilOpen" class="draw-brush">
+                <ul class="draw-tip-ul">
+                    <li ng-repeat="tip in tips" class="draw-tip-li" ng-click="setBrushType(tip.type)">
+                        <img ng-src="{{tip.img}}"></img>
+                    </li>
+                </ul>
+                <div class="draw-size">
+                    <input id="draw-size-range" type="range" min="1" max="150" ng-model="brushSize"/>
+                </div>
+            </div>
 		</div>
 		<div ng-click="erase()" id="EraseBtn" class="DrawBtn">
 			<span>Erase</span>

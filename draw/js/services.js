@@ -1,7 +1,5 @@
 'use strict';
 
-/* Services */
-
 // Services for the drawing module
 // Data model for the current drawing
 angular.module('SeedDraw.services', [])
@@ -17,7 +15,7 @@ angular.module('SeedDraw.services', [])
                 context: null,
                 type: Brush.Radial,
                 color: '000',
-                size: 10,
+                size: 30,
                 opacity: 1
             },
             background : {
@@ -94,18 +92,20 @@ angular.module('SeedDraw.services', [])
         }
 
         DrawingService.SetBrushType = function(type){
+            console.log("DrawingService.SetBrushType: " + type);
             drawing.brush.type = type;
-            $rootScope.$broadcast('RedrawBrush');
+            $rootScope.$broadcast('event:BrushChanged');
         }
 
         DrawingService.SetBrushSize = function(size){
+            console.log("DrawingService.SetBrushSize: " + size);
             drawing.brush.size = size;
-            $rootScope.$broadcast('RedrawBrush');
+            $rootScope.$broadcast('event:BrushChanged');
         }
 
         DrawingService.SetBrushColor = function(color){
             drawing.brush.color = color;
-            $rootScope.$broadcast('RedrawBrush');
+            $rootScope.$broadcast('event:BrushChanged');
         }
 
         DrawingService.SetLayerContext = function(id, context){
@@ -179,6 +179,20 @@ angular.module('SeedDraw.services', [])
                 $rootScope.$apply(tick);
             });
         };
+    })
+    .factory('Brushes', function() {
+        var BrushTypes = [
+            {
+                type: Brush.Marker,
+                img: "img/Brushes/Marker.png"
+            },
+            {
+                type: Brush.Radial,
+                img: "img/Brushes/Radial.png"
+            }
+        ];
+        
+        return BrushTypes;
     });
 
 function animator(DrawingService, animate) {

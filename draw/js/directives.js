@@ -91,10 +91,12 @@ angular.module('SeedDraw.directives', []).
             var cint = parseInt(color, 16);
             var rgb = "rgba("+((cint >> 16) & 255)+","+((cint >> 8) & 255)+","+(cint & 255);
 
+            $element[0].width = size;
+            $element[0].height = size;
             var ctx = brush.element.getContext('2d');
             ctx.clearRect(0,0,size,size);
             //Redraw the brush
-            console.log("Redrawing Brush");
+            console.log("Redrawing Brush: type="+brush.type);
             if(brush.type == Brush.Marker){
                 ctx.beginPath();
                 ctx.arc(center, center, center, 0, 2 * Math.PI, false);
@@ -114,12 +116,14 @@ angular.module('SeedDraw.directives', []).
             }
         };
 
-        $scope.$on('RedrawBrush', function(){
+        $scope.$on('event:BrushChanged', function(){
             console.log("Redraw Brush Received");
             $scope.brush = DrawingService.GetBrush();
+            $scope.RedrawBrush();
         });
 
-        DrawingService.SetBrushSize(10);
+        DrawingService.SetBrushSize(50);
+        DrawingService.SetBrushType(Brush.Marker);
       },
       link:function (scope, element, attrs) {
         scope.$watch(scope.brush, function (type) {
@@ -141,14 +145,17 @@ angular.module('SeedDraw.directives', []).
         $scope.BindMovements = function() {
             $element.bind("mousedown", function(e) {
                 console.log("Mouse down hit");
+
                 $scope.isMouseDown = true;
-                console.log(DrawingService);
+                $scope.hasMoved = false;
+
                 DrawingService.SetPrevious(e.x, e.y);
                 //$scope.buffer.prev.x = e.x;
                 //$scope.buffer.prev.y = e.y;
             });
 
             $element.bind("mousemove", function(e) {
+                $scope.hasMoved = true;
                 //console.log("Mouse move hit");
                 if($scope.isMouseDown){
                     DrawingService.PushToBuffer(e.x, e.y);
@@ -157,9 +164,12 @@ angular.module('SeedDraw.directives', []).
                 }
             });
 
-            $element.bind("mouseup", function() {
+            $element.bind("mouseup", function(e) {
                 console.log("Mouse up hit");
                 $scope.isMouseDown = false;
+                if(!$scope.hasMoved) {
+                    DrawingService.PushToBuffer(e.x, e.y);
+                }
             });
 
             $element.bind("mouseleave", function(e) {
